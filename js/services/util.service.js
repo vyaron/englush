@@ -6,8 +6,8 @@ export function speak(txt) {
     if (voices.length === 0) {
       alert('got 0')
       speechSynthesis.onvoiceschanged = () => {
-        alert('voice-changed')
         voices = speechSynthesis.getVoices();
+        alert('voice-changed, voices:', voices.length)
         utterance.voice = voices[0];
         speechSynthesis.speak(utterance);
       };
