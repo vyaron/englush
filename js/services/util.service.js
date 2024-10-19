@@ -2,6 +2,7 @@
 export function speak(txt) {
   try {
     if ('speechSynthesis' in window) {
+      utterance.lang = 'en-US';
       const utterance = new SpeechSynthesisUtterance(txt);
       let voices = speechSynthesis.getVoices();
       if (voices.length === 0) {
