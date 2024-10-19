@@ -1,24 +1,31 @@
 
 export function speak(txt) {
-  if ('speechSynthesis' in window) {
-    const utterance = new SpeechSynthesisUtterance(txt);
-    let voices = speechSynthesis.getVoices();
-    if (voices.length === 0) {
-      alert('got 0')
-      speechSynthesis.onvoiceschanged = () => {
-        voices = speechSynthesis.getVoices();
-        alert('voice-changed, voices:', voices.length)
+  try {
+    if ('speechSynthesis' in window) {
+      const utterance = new SpeechSynthesisUtterance(txt);
+      let voices = speechSynthesis.getVoices();
+      if (voices.length === 0) {
+        alert('got 0')
+        speechSynthesis.onvoiceschanged = () => {
+          voices = speechSynthesis.getVoices();
+          alert('voice-changed, voices:' + voices.length)
+          utterance.voice = voices[0];
+          console.log('utterance.voice', utterance.voice)
+          speechSynthesis.speak(utterance);
+        };
+      } else {
         utterance.voice = voices[0];
+        alert('about to speak')
+        console.log('utterance.voice', utterance.voice)
         speechSynthesis.speak(utterance);
-      };
+      }
     } else {
-      utterance.voice = voices[0];
-      alert('about to speak')
-      speechSynthesis.speak(utterance);
+      alert('SpeechSynthesis is not supported in this browser');
     }
-  } else {
-    alert('SpeechSynthesis is not supported in this browser');
+  } catch (err) {
+    alert(err)
   }
+
 }
 
 
