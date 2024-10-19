@@ -1,0 +1,80 @@
+.units-page {
+    padding: 20px
+}
+
+.unit-container {
+    margin-bottom: 30px
+}
+
+.levels-container {
+    display: flex
+    flex-wrap: wrap
+    gap: 15px
+}
+
+.level-button {
+    width: 60px
+    height: 60px
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    background-color: #ccc
+    position: relative
+}
+
+.level-button.completed {
+    background-color: #4CAF50
+}
+
+.level-button.completed-a {
+    background-color: gold
+}
+
+.star {
+    font-size: 24px
+    color: white
+}
+
+.level-info {
+    display: none
+    position: absolute
+    top: 100%
+    left: 50%
+    transform: translateX(-50%)
+    background-color: white
+    padding: 10px
+    border-radius: 5px
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2)
+    z-index: 10
+}
+
+.level-button:hover .level-info {
+    display: block
+}
+
+.start-btn {
+    margin-top: 10px
+    padding: 5px 10px
+    background-color: #0f3460
+    color: white
+    border: none
+    border-radius: 5px
+    cursor: pointer
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 5px 0;
+}
+
+.progress {
+    height: 100%;
+    background-color: #4CAF50;
+    transition: width 0.3s ease;
+}
