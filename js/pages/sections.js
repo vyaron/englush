@@ -9,7 +9,7 @@ export async function sectionsPageContent() {
             <h1>Select a Section</h1>
             <div class="sections-grid">
                 ${sections.map((section, idx) => `
-                    <button class="section-button" onclick="selectSection('${section.id}')">
+                    <button class="section-button" onclick="selectSection('${section.id}')" ${(idx > 0)? 'disabled' : '' }>
                         ${section.title} ${(idx > 0)? '🔒' : '' }
                     </button>
                 `).join('')}
