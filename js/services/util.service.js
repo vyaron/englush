@@ -2,15 +2,21 @@
 
 
 export function speak(txt) {
-  // Create a SpeechSynthesisUtterance
-  const utterance = new SpeechSynthesisUtterance(txt)
 
-  // Select a voice
-  const voices = speechSynthesis.getVoices()
-  utterance.voice = voices[0] // Choose a specific voice
+  try {
+    // Create a SpeechSynthesisUtterance
+    const utterance = new SpeechSynthesisUtterance(txt)
 
-  // Speak the text
-  speechSynthesis.speak(utterance)
+    // Select a voice
+    const voices = speechSynthesis.getVoices()
+    utterance.voice = voices[0] // Choose a specific voice
+
+    alert(utterance)
+    // Speak the text
+    speechSynthesis.speak(utterance)
+  } catch (err) {
+    alert(err)
+  }
 }
 
 
