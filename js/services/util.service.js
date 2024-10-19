@@ -11,6 +11,7 @@ export function speak(txt) {
           voices = speechSynthesis.getVoices();
           alert('voice-changed, voices:' + voices.length)
           utterance.voice = voices[0];
+          alert(utterance.voice.name)
           console.log('utterance.voice', utterance.voice)
           speechSynthesis.speak(utterance);
         };
