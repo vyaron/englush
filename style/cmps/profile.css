@@ -28,6 +28,12 @@
     margin-bottom: 20px;
 }
 
+.profile-page img.go{
+    display: block;
+    max-width: 80vw;
+    margin: auto;
+}
+
 @media (max-width: 768px) {
     .chart-container {
         width: 100%;

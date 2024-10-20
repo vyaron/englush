@@ -123,9 +123,10 @@
 
 /* Add or update these styles in your CSS file */
 
-.feedback-text .correct-answer {
-    font-size: 0.8em;
-    opacity: 0.8;
+.feedback-text {
+    /* font-size: 0.8em; */
+    /* opacity: 0.8; */
+    color: white;
 }
 
 .feedback-text .correct-answer-word {

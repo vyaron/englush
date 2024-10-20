@@ -1,4 +1,5 @@
 import { gameService } from '../services/game.service.js'
+import { getCheer, getCompliment } from '../services/util.service.js'
 import { speak } from '../services/util.service.js'
 import { playAudio } from '../services/util.service.js'
 import { userService } from '../services/user.service.js' // Add this import
@@ -114,7 +115,10 @@ async function checkAnswer() {
     
     if (isCorrect) {
         playAudio('right.mp3');
-        feedbackText.innerHTML = '<p>מצוין! ✓</p>'
+        feedbackText.innerHTML = `
+        <p> ✓</p>
+        <p>${getCheer()}</p>
+        `
         feedbackOverlay.className = 'feedback-overlay show correct'
         feedbackBtn.textContent = 'המשך'
         
@@ -345,7 +349,7 @@ async function finishLesson() {
     app.innerHTML = `
         <div class="lesson-complete">
             <h2>${message}</h2>
-            <p>קשה באימונים, קל בקרב</p>
+            <p>${getCompliment()}</p>
             <div class="dog-container">
                 <img src="img/dog.png" alt="Congratulatory Dog" class="dog-image">
             </div>

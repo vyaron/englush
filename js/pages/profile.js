@@ -1,5 +1,6 @@
 import { userService } from '../services/user.service.js'
 import { gameService } from '../services/game.service.js'
+import { getRandomInt } from '../services/util.service.js'
 
 export async function profilePageContent() {
     const user = userService.getLoggedinUser()
@@ -17,6 +18,7 @@ export async function profilePageContent() {
                 <img src="${user.imgUrl}" alt="${user.fullname}" class="profile-image">
                 <h2>${user.fullname}</h2>
                 <p>ניקוד כולל: ${user.score}</p>
+                <img class="go" src="img/brain/go1.gif" />
             </div>
             <div class="progress-charts">
                 <div class="chart-container">
@@ -31,6 +33,8 @@ export async function profilePageContent() {
 }
 
 export function setupProfilePage() {
+    document.querySelector('img.go').src = `img/brain/go${getRandomInt(1, 7)}.gif`
+
     renderOverallProgressChart()
     renderSectionProgressChart()
 }
