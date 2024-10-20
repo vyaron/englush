@@ -64,7 +64,7 @@ async function updateProgress(sectionId, unitId, levelId, lessonId, questId, sco
         console.error('User progress not initialized')
         return
     }
-    
+
     const quest = user.progress.sections[sectionId].units[unitId].levels[levelId].lessons[lessonId].quests[questId]
     quest.completed = true
     quest.score = score

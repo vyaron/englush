@@ -33,6 +33,10 @@
     transition: all 0.3s ease;
 }
 
+.option-btn.larger {
+    font-size: 52px;
+}
+
 .option-btn:hover {
     background-color: rgba(255, 255, 255, 0.1);
     color: black

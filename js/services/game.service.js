@@ -970,7 +970,201 @@ const originalData = {
                                     ]
                                 }
                             ]
-                        }
+                        },
+// ... existing code ...
+
+{
+    id: 'level1_1_5',
+    title: 'זיהוי חיות',
+    lessons: [
+        {
+            id: 'lesson1_1_5_1',
+            title: 'חיות חווה',
+            quests: [
+                {
+                    id: 'quest1_1_5_1_1',
+                    title: 'בחר את החיה הנכונה: Dog',
+                    correctOptIdx: 0,
+                    opts: [
+                        { word: '🐕' },
+                        { word: '🐈' },
+                        { word: '🐎' },
+                        { word: '🐖' }
+                    ]
+                },
+                {
+                    id: 'quest1_1_5_1_2',
+                    title: 'בחר את החיה הנכונה: Cat',
+                    correctOptIdx: 1,
+                    opts: [
+                        { word: '🐇' },
+                        { word: '🐈' },
+                        { word: '🦊' },
+                        { word: '🐒' }
+                    ]
+                },
+                {
+                    id: 'quest1_1_5_1_3',
+                    title: 'בחר את החיה הנכונה: Horse',
+                    correctOptIdx: 2,
+                    opts: [
+                        { word: '🐂' },
+                        { word: '🦓' },
+                        { word: '🐎' },
+                        { word: '🦌' }
+                    ]
+                },
+                {
+                    id: 'quest1_1_5_1_4',
+                    title: 'בחר את החיה הנכונה: Pig',
+                    correctOptIdx: 3,
+                    opts: [
+                        { word: '🐑' },
+                        { word: '🐐' },
+                        { word: '🐄' },
+                        { word: '🐖' }
+                    ]
+                },
+                {
+                    id: 'quest1_1_5_1_5',
+                    title: 'בחר את החיה הנכונה: Cow',
+                    correctOptIdx: 3,
+                    opts: [
+                        { word: '🐃' },
+                        { word: '🐂' },
+                        { word: '🐪' },
+                        { word: '🐄' }
+                    ]
+                }
+            ]
+        },
+        {
+            id: 'lesson1_1_5_2',
+            title: 'חיות בר',
+            quests: [
+                {
+                    id: 'quest1_1_5_2_1',
+                    title: 'בחר את החיה הנכונה: Elephant',
+                    correctOptIdx: 0,
+                    opts: [
+                        { word: '🐘' },
+                        { word: '🦏' },
+                        { word: '🦛' },
+                        { word: '🐪' }
+                    ]
+                },
+                {
+                    id: 'quest1_1_5_2_2',
+                    title: 'בחר את החיה הנכונה: Lion',
+                    correctOptIdx: 1,
+                    opts: [
+                        { word: '🐯' },
+                        { word: '🦁' },
+                        { word: '🐆' },
+                        { word: '🐅' }
+                    ]
+                },
+                {
+                    id: 'quest1_1_5_2_3',
+                    title: 'בחר את החיה הנכונה: Monkey',
+                    correctOptIdx: 2,
+                    opts: [
+                        { word: '🦍' },
+                        { word: '🦧' },
+                        { word: '🐒' },
+                        { word: '🐵' }
+                    ]
+                },
+                {
+                    id: 'quest1_1_5_2_4',
+                    title: 'בחר את החיה הנכונה: Bear',
+                    correctOptIdx: 3,
+                    opts: [
+                        { word: '🦝' },
+                        { word: '🦡' },
+                        { word: '🦨' },
+                        { word: '🐻' }
+                    ]
+                },
+                {
+                    id: 'quest1_1_5_2_5',
+                    title: 'בחר את החיה הנכונה: Giraffe',
+                    correctOptIdx: 0,
+                    opts: [
+                        { word: '🦒' },
+                        { word: '🦓' },
+                        { word: '🦌' },
+                        { word: '🦘' }
+                    ]
+                }
+            ]
+        },
+        {
+            id: 'lesson1_1_5_3',
+            title: 'חיות מגוונות',
+            quests: [
+                {
+                    id: 'quest1_1_5_3_1',
+                    title: 'בחר את החיה הנכונה: Sheep',
+                    correctOptIdx: 0,
+                    opts: [
+                        { word: '🐑' },
+                        { word: '🐐' },
+                        { word: '🦙' },
+                        { word: '🐫' }
+                    ]
+                },
+                {
+                    id: 'quest1_1_5_3_2',
+                    title: 'בחר את החיה הנכונה: Chicken',
+                    correctOptIdx: 1,
+                    opts: [
+                        { word: '🦃' },
+                        { word: '🐔' },
+                        { word: '🦆' },
+                        { word: '🦢' }
+                    ]
+                },
+                {
+                    id: 'quest1_1_5_3_3',
+                    title: 'בחר את החיה הנכונה: Rabbit',
+                    correctOptIdx: 2,
+                    opts: [
+                        { word: '🐹' },
+                        { word: '🐀' },
+                        { word: '🐇' },
+                        { word: '🦔' }
+                    ]
+                },
+                {
+                    id: 'quest1_1_5_3_4',
+                    title: 'בחר את החיה הנכונה: Penguin',
+                    correctOptIdx: 1,
+                    opts: [
+                        { word: '🦅' },
+                        { word: '🐧' },
+                        { word: '🦉' },
+                        { word: '🐹' }
+                    ]
+                },
+                {
+                    id: 'quest1_1_5_3_5',
+                    title: 'בחר את החיה הנכונה: Crocodile',
+                    correctOptIdx: 2,
+                    opts: [
+                        { word: '🦎' },
+                        { word: '🐊' },
+                        { word: '🐊' },
+                        { word: '🦕' }
+                    ]
+                }
+            ]
+        }
+      
+    ]
+}
+
+// ... rest of the code ...
                     ]
                 }
             ]

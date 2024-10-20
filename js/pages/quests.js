@@ -17,11 +17,11 @@ async function getQuests() {
     currentUnitId = urlParams.get('unit')
     currentLevelId = urlParams.get('level')
     currentLessonId = urlParams.get('lesson')
-    
+
     if (!currentSectionId || !currentUnitId || !currentLevelId) {
         throw new Error('Missing required parameters for fetching quests')
     }
-    
+
     if (!currentLessonId) {
         // If lessonId is not provided, get the first lesson of the level
         const level = await gameService.getLevel(currentSectionId, currentUnitId, currentLevelId)
@@ -35,11 +35,11 @@ async function getQuests() {
 
     const fetchedQuests = await gameService.getQuests(currentSectionId, currentUnitId, currentLevelId, currentLessonId)
     console.log('Fetched quests:', fetchedQuests)
-    
+
     if (!fetchedQuests || fetchedQuests.length === 0) {
         throw new Error('No quests returned from gameService.getQuests')
     }
-    
+
     return fetchedQuests
 }
 
@@ -48,6 +48,7 @@ function questsPageContent(quest) {
         console.error('No quest data available')
         return '<div>Error: No quest data available</div>'
     }
+    const largerOptClassname = (quest.opts.every(({ word }) => word.length <= 2))? 'larger' : ''
 
     return `
         <div class="quest-page">
@@ -65,7 +66,7 @@ function questsPageContent(quest) {
             ` : ''}
             <div class="options-grid">
                 ${quest.opts.map((option, index) => `
-                    <button class="option-btn" data-index="${index}" data-text="${option.word}">
+                    <button class="option-btn ${largerOptClassname}" data-index="${index}" data-text="${option.word}">
                         ${option.word.toUpperCase()}
                     </button>
                 `).join('')}
@@ -95,14 +96,14 @@ function selectOption(index, text) {
     const checkBtn = document.getElementById('checkBtn')
     checkBtn.disabled = false
     checkBtn.classList.add('enabled')
-    
+
     speak(text)
 }
 
 async function checkAnswer() {
     const quest = quests[currentQuest]
     const isCorrect = selectedOption === quest.correctOptIdx
-    
+
     // Store the user's answer
     quest.userAnswer = selectedOption
 
@@ -110,9 +111,9 @@ async function checkAnswer() {
     const feedbackOverlay = document.getElementById('feedbackOverlay')
     const feedbackText = document.getElementById('feedbackText')
     const feedbackBtn = document.getElementById('feedbackBtn')
-    
+
     pageOverlay.classList.add('show')
-    
+
     if (isCorrect) {
         playAudio('right.mp3');
         feedbackText.innerHTML = `
@@ -121,7 +122,7 @@ async function checkAnswer() {
         `
         feedbackOverlay.className = 'feedback-overlay show correct'
         feedbackBtn.textContent = 'המשך'
-        
+
         // Update user progress
         await userService.updateProgress(currentSectionId, currentUnitId, currentLevelId, currentLessonId, quest.id, 100)
     } else {
@@ -140,7 +141,7 @@ async function checkAnswer() {
             console.log('Game Over')
             return
         }
-        
+
         // Update user progress with 0 points for incorrect answer
         await userService.updateProgress(currentSectionId, currentUnitId, currentLevelId, currentLessonId, quest.id, 0)
     }
@@ -149,10 +150,10 @@ async function checkAnswer() {
 function nextQuest() {
     const feedbackOverlay = document.getElementById('feedbackOverlay')
     const pageOverlay = document.getElementById('pageOverlay')
-    
+
     feedbackOverlay.classList.remove('show')
     pageOverlay.classList.remove('show')
-    
+
     currentQuest++
     if (currentQuest < quests.length) {
         renderCurrentQuest()
@@ -180,16 +181,16 @@ function renderCurrentQuest() {
         app.innerHTML = '<div>Error: No more quests available</div>'
         return
     }
-    
+
     const quest = quests[currentQuest]
     let content
-    
+
     if (quest.couples) {
         content = renderCouplesQuest(quest)
     } else {
         content = questsPageContent(quest)
     }
-    
+
     app.innerHTML = content + `
         <div id="pageOverlay" class="page-overlay"></div>
         <div id="feedbackOverlay" class="feedback-overlay">
@@ -214,7 +215,7 @@ export function setupQuestPage() {
         console.error('Quest page element not found')
         return
     }
-    
+
     if (questPage.classList.contains('couples-quest')) {
         setupCouplesQuest()
     } else {
@@ -242,7 +243,7 @@ export function setupQuestPage() {
 
 function setupRegularQuest() {
     const questPage = document.querySelector('.quest-page')
-    questPage.addEventListener('click', function(event) {
+    questPage.addEventListener('click', function (event) {
         if (event.target.classList.contains('option-btn')) {
             const index = parseInt(event.target.dataset.index)
             const text = event.target.dataset.text
@@ -255,7 +256,7 @@ function setupRegularQuest() {
     // Add event listener for play sound button if it exists
     const playSoundBtn = document.getElementById('playSound')
     if (playSoundBtn) {
-        playSoundBtn.addEventListener('click', function() {
+        playSoundBtn.addEventListener('click', function () {
             const quest = quests[currentQuest]
             if (quest.word) {
                 speak(`${quest.word}`)
@@ -273,7 +274,7 @@ function setupRegularQuest() {
 function setupCouplesQuest() {
     let selectedWords = []
     const questPage = document.querySelector('.quest-page')
-    questPage.addEventListener('click', function(event) {
+    questPage.addEventListener('click', function (event) {
         if (event.target.classList.contains('word-button')) {
             handleWordClick(event.target, selectedWords)
         }
@@ -283,11 +284,11 @@ function setupCouplesQuest() {
 function showConfirmModal() {
     const confirmModal = document.getElementById('confirmModal');
     const pageOverlay = document.getElementById('pageOverlay');
-    
+
     // Set display to block and trigger reflow
     confirmModal.style.display = 'block';
     confirmModal.offsetHeight;
-    
+
     // Add show class to start animation
     confirmModal.classList.add('show');
     pageOverlay.classList.add('show');
@@ -296,11 +297,11 @@ function showConfirmModal() {
 function hideConfirmModal() {
     const confirmModal = document.getElementById('confirmModal');
     const pageOverlay = document.getElementById('pageOverlay');
-    
+
     // Remove show class to start hiding animation
     confirmModal.classList.remove('show');
     pageOverlay.classList.remove('show');
-    
+
     // Wait for animation to finish before setting display to none
     setTimeout(() => {
         confirmModal.style.display = 'none';
@@ -339,10 +340,10 @@ async function finishLesson() {
             return quest.userAnswer === quest.correctOptIdx
         }
     }).length;
-    
+
     const totalQuests = quests.length;
     const percentageCorrect = (correctAnswers / totalQuests) * 100;
-    
+
     const message = percentageCorrect >= 70 ? 'כל הכבוד!' : 'לא רע';
 
     const app = document.getElementById('app')
@@ -357,7 +358,7 @@ async function finishLesson() {
             <button id="nextLessonBtn">חזרה ליחידות</button>
         </div>
     `
-    
+
     // Add animation class after a short delay to trigger the animation
     setTimeout(() => {
         document.querySelector('.dog-image').classList.add('animate')
@@ -427,7 +428,7 @@ function handleWordClick(button, selectedWords) {
         selectedWords.length = 0
         button.classList.add('selected')
         selectedWords.push(button)
-        
+
         if (button.classList.contains('left')) {
             speak(button.dataset.word)
         }
@@ -437,7 +438,7 @@ function handleWordClick(button, selectedWords) {
 function checkCouplesMatch(selectedWords) {
     const [left, right] = selectedWords
     const quest = quests[currentQuest]
-    const isMatch = quest.couples.some(pair => 
+    const isMatch = quest.couples.some(pair =>
         (pair.word1 === left.dataset.word && pair.word2 === right.dataset.word) ||
         (pair.word1 === right.dataset.word && pair.word2 === left.dataset.word)
     )
@@ -455,7 +456,7 @@ function handleCouplesMatch(selectedWords) {
         button.classList.add('matched')
         button.disabled = true
     })
-    
+
     const allMatched = document.querySelectorAll('.word-button:not(.matched)').length === 0
     if (allMatched) {
         const quest = quests[currentQuest]
@@ -497,16 +498,16 @@ function showFeedback(message, className, buttonText) {
     const feedbackOverlay = document.getElementById('feedbackOverlay')
     const feedbackText = document.getElementById('feedbackText')
     const feedbackBtn = document.getElementById('feedbackBtn')
-    
+
     pageOverlay.classList.add('show')
-    
+
     feedbackText.innerHTML = `<p>${message}</p>`
     feedbackOverlay.className = `feedback-overlay show ${className}`
     feedbackBtn.textContent = buttonText
-    
+
     // Ensure the feedback overlay is above the page overlay
     feedbackOverlay.style.zIndex = '1001'
-    
+
     feedbackBtn.addEventListener('click', () => {
         nextQuest()
         pageOverlay.classList.remove('show')
