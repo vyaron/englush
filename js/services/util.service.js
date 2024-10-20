@@ -6,19 +6,18 @@ export function speak(txt) {
       utterance.lang = 'en-US';
       let voices = speechSynthesis.getVoices();
       if (voices.length === 0) {
-        alert('got 0')
         speechSynthesis.onvoiceschanged = () => {
           voices = speechSynthesis.getVoices();
-          alert('voice-changed, voices:' + voices.length)
+          // alert('voice-changed, voices:' + voices.length)
           utterance.voice = voices[0];
-          alert(utterance.voice.name)
-          console.log('utterance.voice', utterance.voice)
+          // alert(utterance.voice.name)
+          // console.log('utterance.voice', utterance.voice)
           speechSynthesis.speak(utterance);
         };
       } else {
         utterance.voice = voices[0];
-        alert('about to speak')
-        console.log('utterance.voice', utterance.voice)
+        // alert('about to speak')
+        // console.log('utterance.voice', utterance.voice)
         speechSynthesis.speak(utterance);
       }
     } else {
