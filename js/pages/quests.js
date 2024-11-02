@@ -48,7 +48,7 @@ function questsPageContent(quest) {
         console.error('No quest data available')
         return '<div>Error: No quest data available</div>'
     }
-    const largerOptClassname = (quest.opts.every(({ word }) => word.length <= 2))? 'larger' : ''
+    const largerOptClassname = (quest.opts.every(({ word }) => word.length <= 2)) ? 'larger' : ''
 
     return `
         <div class="quest-page">
@@ -59,6 +59,9 @@ function questsPageContent(quest) {
                 <button id="exitBtn" class="exit-btn">X</button>
             </div>
             <h2 class="quest-question">${quest.title}</h2>
+            ${quest.speakWord ? `
+                <span id="speakWord" class="quest-word clickable">${quest.speakWord}</span>
+            ` : ''}
             ${quest.word ? `
                 <button id="playSound" class="play-sound-btn">
                     <i class="fas fa-volume-up"></i>
@@ -117,8 +120,13 @@ async function checkAnswer() {
     if (isCorrect) {
         playAudio('right.mp3');
         feedbackText.innerHTML = `
-        <p> ✓</p>
-        <p>${getCheer()}</p>
+            <div class="feedback-content">
+                <img src="img/dog.png" alt="Happy Dog" class="feedback-dog">
+                <div class="feedback-message">
+                    <p class="check-mark">✓</p>
+                    <p class="cheer">${getCheer()}</p>
+                </div>
+            </div>
         `
         feedbackOverlay.className = 'feedback-overlay show correct'
         feedbackBtn.textContent = 'המשך'
@@ -129,8 +137,14 @@ async function checkAnswer() {
         playAudio('wrong.mp3');
         const correctAnswer = quest.opts[quest.correctOptIdx].word
         feedbackText.innerHTML = `
-            <p>טעית ✗</p>
-            <p class="correct-answer">התשובה הנכונה היא: <span class="correct-answer-word">${correctAnswer}</span></p>
+            <div class="feedback-content">
+                <img src="img/sad-dog.webp" alt="Sad Dog" class="feedback-dog">
+                <div class="feedback-message">
+                    <p class="wrong-mark">✗</p>
+                    <p>טעית</p>
+                    <p class="correct-answer">התשובה הנכונה היא: <span class="correct-answer-word">${correctAnswer}</span></p>
+                </div>
+            </div>
         `
         feedbackOverlay.className = 'feedback-overlay show incorrect'
         feedbackBtn.textContent = 'הבנתי'
@@ -269,6 +283,14 @@ function setupRegularQuest() {
     if (feedbackBtn) {
         feedbackBtn.addEventListener('click', nextQuest)
     }
+
+    // Add event listener for clickable word
+    const speakWord = document.getElementById('speakWord')
+    if (speakWord) {
+        speakWord.addEventListener('click', function () {
+            speak(this.textContent)
+        })
+    }
 }
 
 function setupCouplesQuest() {
@@ -335,7 +357,7 @@ export async function initQuestsPage() {
 async function finishLesson() {
     const correctAnswers = quests.filter(quest => {
         if (quest.couples) {
-            return quest.userAnswer === 100 // Assuming 100 means completed successfully
+            return quest.userAnswer === 100
         } else {
             return quest.userAnswer === quest.correctOptIdx
         }
@@ -343,6 +365,7 @@ async function finishLesson() {
 
     const totalQuests = quests.length;
     const percentageCorrect = (correctAnswers / totalQuests) * 100;
+    const oldScore = userService.getLoggedinUser().score;
 
     const message = percentageCorrect >= 70 ? 'כל הכבוד!' : 'לא רע';
 
@@ -350,27 +373,52 @@ async function finishLesson() {
     app.innerHTML = `
         <div class="lesson-complete">
             <h2>${message}</h2>
-            <p>${getCompliment()}</p>
+            <p class="compliment">${getCompliment()}</p>
             <div class="dog-container">
                 <img src="img/dog.png" alt="Congratulatory Dog" class="dog-image">
             </div>
             <p>ציון: ${percentageCorrect.toFixed(0)}%</p>
+            <div class="total-score-container">
+                <p>ניקוד כולל: <span class="total-score">${oldScore}</span> 💰</p>
+            </div>
             <button id="nextLessonBtn">חזרה ליחידות</button>
         </div>
     `
 
-    // Add animation class after a short delay to trigger the animation
+    // Update progress first to get new total score
+    await userService.updateLessonProgress(currentSectionId, currentUnitId, currentLevelId, currentLessonId, percentageCorrect)
+    const newScore = userService.getLoggedinUser().score;
+
+    // Animate total score
+    const scoreElement = document.querySelector('.total-score')
+    let currentScore = oldScore
+    const duration = 1500
+    const steps = 60
+    const increment = (newScore - oldScore) / steps
+    const stepDuration = duration / steps
+
+    const animateScore = () => {
+        currentScore = Math.min(currentScore + increment, newScore)
+        scoreElement.textContent = Math.round(currentScore)
+
+        if (currentScore < newScore) {
+            setTimeout(animateScore, stepDuration)
+        }
+    }
+
+    document.querySelector('.dog-image').classList.add('animate')
+    document.querySelector('.compliment').classList.add('animate')
+
+
+    // Start animations
     setTimeout(() => {
-        document.querySelector('.dog-image').classList.add('animate')
-    }, 100)
+        animateScore()
+    }, 10)
 
     document.getElementById('nextLessonBtn').addEventListener('click', () => {
-        // Navigate back to the units page
-        window.location.hash = '#units';
+        window.location.hash = '#units'
     })
-
-    // Update overall lesson progress
-    await userService.updateLessonProgress(currentSectionId, currentUnitId, currentLevelId, currentLessonId, percentageCorrect)
+    playAudio('coins.mp3')
 }
 
 function renderCouplesQuest(quest) {
@@ -407,7 +455,7 @@ function renderCouplesQuest(quest) {
 }
 
 function handleWordClick(button, selectedWords) {
-    debugger
+
     if (button.classList.contains('matched') || button.classList.contains('selected')) {
         return
     }
@@ -501,7 +549,14 @@ function showFeedback(message, className, buttonText) {
 
     pageOverlay.classList.add('show')
 
-    feedbackText.innerHTML = `<p>${message}</p>`
+    feedbackText.innerHTML = `
+        <div class="feedback-content">
+            <img src="${className === 'correct' ? 'img/dog.png' : 'img/sad-dog.png'}" alt="Dog" class="feedback-dog">
+            <div class="feedback-message">
+                <p class="${className === 'correct' ? 'check-mark' : 'wrong-mark'}">${message}</p>
+            </div>
+        </div>
+    `
     feedbackOverlay.className = `feedback-overlay show ${className}`
     feedbackBtn.textContent = buttonText
 
@@ -514,3 +569,4 @@ function showFeedback(message, className, buttonText) {
         feedbackOverlay.classList.remove('show')
     }, { once: true })
 }
+

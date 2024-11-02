@@ -34,6 +34,11 @@
     margin: auto;
 }
 
+.user-score {
+    font-size: 0.8em;
+    margin-left: 5px;
+}
+
 @media (max-width: 768px) {
     .chart-container {
         width: 100%;

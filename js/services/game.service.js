@@ -1,4 +1,3 @@
-
 const originalData = {
     sections: [
         {
@@ -18,28 +17,6 @@ const originalData = {
                                     title: 'א-ד',
                                     quests: [
                                         {
-                                            id: 'quest1_1_1_1_1',
-                                            title: 'בחר את הצליל המתאים לאות א',
-                                            correctOptIdx: 0,
-                                            opts: [
-                                                { word: 'a' },
-                                                { word: 'b' },
-                                                { word: 'd' },
-                                                { word: 'f' }
-                                            ]
-                                        },
-                                        {
-                                            id: 'quest1_1_1_1_2',
-                                            title: 'בחר את הצליל המתאים לאות ב',
-                                            correctOptIdx: 1,
-                                            opts: [
-                                                { word: 'a' },
-                                                { word: 'b' },
-                                                { word: 'v' },
-                                                { word: 'f' }
-                                            ]
-                                        },
-                                        {
                                             id: 'quest1_1_1_1_3',
                                             title: 'בחר את הצליל המתאים לאות ג',
                                             correctOptIdx: 2,
@@ -48,6 +25,17 @@ const originalData = {
                                                 { word: 'k' },
                                                 { word: 'g' },
                                                 { word: 'h' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_1_1_1_1',
+                                            title: 'בחר את הצליל המתאים לאות א',
+                                            correctOptIdx: 0,
+                                            opts: [
+                                                { word: 'a' },
+                                                { word: 'b' },
+                                                { word: 'd' },
+                                                { word: 'f' }
                                             ]
                                         },
                                         {
@@ -107,7 +95,7 @@ const originalData = {
                                             opts: [
                                                 { word: 'j' },
                                                 { word: 'y' },
-                                                { word: 'i' },
+                                                { word: 'a' },
                                                 { word: 'l' }
                                             ]
                                         }
@@ -172,7 +160,7 @@ const originalData = {
                                             title: 'בחר את הצליל המתאים לאות פ',
                                             correctOptIdx: 1,
                                             opts: [
-                                                { word: 'f' },
+                                                { word: 'j' },
                                                 { word: 'p' },
                                                 { word: 'b' },
                                                 { word: 'v' }
@@ -185,8 +173,8 @@ const originalData = {
                                             opts: [
                                                 { word: 'k' },
                                                 { word: 'g' },
-                                                { word: 'q' },
-                                                { word: 'c' }
+                                                { word: 'r' },
+                                                { word: 'x' }
                                             ]
                                         },
                                         {
@@ -205,7 +193,7 @@ const originalData = {
                                             title: 'בחר את הצליל המתאים לאות ש',
                                             correctOptIdx: 1,
                                             opts: [
-                                                { word: 's' },
+                                                { word: 'v' },
                                                 { word: 'sh' },
                                                 { word: 'z' },
                                                 { word: 'ch' }
@@ -224,9 +212,9 @@ const originalData = {
                                     title: 'מילים פשוטות',
                                     quests: [
                                         {
-                                            id: 'quest1_1_2_1_1',
-                                            title: 'באיזה אות מתחילה המילה "Apple"?',
-                                            correctOptIdx: 0,
+                                            id: 'quest1_1_2_1_4',
+                                            title: 'באיזה אות מתחילה המילה "Dog"?',
+                                            correctOptIdx: 3,
                                             opts: [
                                                 { word: 'A' },
                                                 { word: 'B' },
@@ -235,9 +223,9 @@ const originalData = {
                                             ]
                                         },
                                         {
-                                            id: 'quest1_1_2_1_2',
-                                            title: 'באיזה אות מתחילה המילה "Book"?',
-                                            correctOptIdx: 1,
+                                            id: 'quest1_1_2_1_1',
+                                            title: 'באיזה אות מתחילה המילה "Apple"?',
+                                            correctOptIdx: 0,
                                             opts: [
                                                 { word: 'A' },
                                                 { word: 'B' },
@@ -257,9 +245,9 @@ const originalData = {
                                             ]
                                         },
                                         {
-                                            id: 'quest1_1_2_1_4',
-                                            title: 'באיזה אות מתחילה המילה "Dog"?',
-                                            correctOptIdx: 3,
+                                            id: 'quest1_1_2_1_2',
+                                            title: 'באיזה אות מתחילה המילה "Book"?',
+                                            correctOptIdx: 1,
                                             opts: [
                                                 { word: 'A' },
                                                 { word: 'B' },
@@ -274,28 +262,6 @@ const originalData = {
                                     title: 'מילים מורכבות יותר',
                                     quests: [
                                         {
-                                            id: 'quest1_1_2_2_1',
-                                            title: 'באיזה אות מתחילה המילה "House"?',
-                                            correctOptIdx: 2,
-                                            opts: [
-                                                { word: 'F' },
-                                                { word: 'G' },
-                                                { word: 'H' },
-                                                { word: 'I' }
-                                            ]
-                                        },
-                                        {
-                                            id: 'quest1_1_2_2_2',
-                                            title: 'באיזה אות מתחילה המילה "Jacket"?',
-                                            correctOptIdx: 3,
-                                            opts: [
-                                                { word: 'G' },
-                                                { word: 'H' },
-                                                { word: 'I' },
-                                                { word: 'J' }
-                                            ]
-                                        },
-                                        {
                                             id: 'quest1_1_2_2_3',
                                             title: 'באיזה אות מתחילה המילה "Kitchen"?',
                                             correctOptIdx: 0,
@@ -304,6 +270,17 @@ const originalData = {
                                                 { word: 'L' },
                                                 { word: 'M' },
                                                 { word: 'N' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_1_2_2_1',
+                                            title: 'באיזה אות מתחילה המילה "House"?',
+                                            correctOptIdx: 2,
+                                            opts: [
+                                                { word: 'F' },
+                                                { word: 'G' },
+                                                { word: 'H' },
+                                                { word: 'I' }
                                             ]
                                         },
                                         {
@@ -316,105 +293,16 @@ const originalData = {
                                                 { word: 'M' },
                                                 { word: 'N' }
                                             ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    id: 'lesson1_1_2_3',
-                                    title: 'מילים ארוכות',
-                                    quests: [
-                                        {
-                                            id: 'quest1_1_2_3_1',
-                                            title: 'באיזה אות מתחילה המילה "Television"?',
-                                            correctOptIdx: 0,
-                                            opts: [
-                                                { word: 'T' },
-                                                { word: 'E' },
-                                                { word: 'L' },
-                                                { word: 'V' }
-                                            ]
                                         },
                                         {
-                                            id: 'quest1_1_2_3_2',
-                                            title: 'באיזה אות מתחילה המילה "University"?',
-                                            correctOptIdx: 0,
+                                            id: 'quest1_1_2_2_2',
+                                            title: 'באיזה אות מתחילה המילה "Jacket"?',
+                                            correctOptIdx: 3,
                                             opts: [
-                                                { word: 'U' },
-                                                { word: 'N' },
+                                                { word: 'G' },
+                                                { word: 'H' },
                                                 { word: 'I' },
-                                                { word: 'V' }
-                                            ]
-                                        },
-                                        {
-                                            id: 'quest1_1_2_3_3',
-                                            title: 'באיזה אות מתחילה המילה "Encyclopedia"?',
-                                            correctOptIdx: 0,
-                                            opts: [
-                                                { word: 'E' },
-                                                { word: 'N' },
-                                                { word: 'C' },
-                                                { word: 'Y' }
-                                            ]
-                                        },
-                                        {
-                                            id: 'quest1_1_2_3_4',
-                                            title: 'באיזה אות מתחילה המילה "Psychology"?',
-                                            correctOptIdx: 2,
-                                            opts: [
-                                                { word: 'S' },
-                                                { word: 'C' },
-                                                { word: 'P' },
-                                                { word: 'Y' }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    id: 'lesson1_1_2_4',
-                                    title: 'מילים מאתגרות',
-                                    quests: [
-                                        {
-                                            id: 'quest1_1_2_4_1',
-                                            title: 'באיזה אות מתחילה המילה "Xylophone"?',
-                                            correctOptIdx: 0,
-                                            opts: [
-                                                { word: 'X' },
-                                                { word: 'Z' },
-                                                { word: 'S' },
-                                                { word: 'Y' }
-                                            ]
-                                        },
-                                        {
-                                            id: 'quest1_1_2_4_2',
-                                            title: 'באיזה אות מתחילה המילה "Quixotic"?',
-                                            correctOptIdx: 1,
-                                            opts: [
-                                                { word: 'K' },
-                                                { word: 'Q' },
-                                                { word: 'X' },
-                                                { word: 'C' }
-                                            ]
-                                        },
-                                        {
-                                            id: 'quest1_1_2_4_3',
-                                            title: 'באיזה אות מתחילה המילה "Rhinoceros"?',
-                                            correctOptIdx: 2,
-                                            opts: [
-                                                { word: 'W' },
-                                                { word: 'N' },
-                                                { word: 'R' },
-                                                { word: 'H' }
-                                            ]
-                                        },
-                                        {
-                                            id: 'quest1_1_2_4_4',
-                                            title: 'באיזה אות מתחילה המילה "Pneumonia"?',
-                                            correctOptIdx: 2,
-                                            opts: [
-                                                { word: 'N' },
-                                                { word: 'M' },
-                                                { word: 'P' },
-                                                { word: 'F' }
+                                                { word: 'J' }
                                             ]
                                         }
                                     ]
@@ -423,12 +311,24 @@ const originalData = {
                         },
                         {
                             id: 'level1_1_3',
-                            title: 'זהה את האות',
+                            title: 'זהה את האות המושמעת',
                             lessons: [
                                 {
                                     id: 'lesson1_1_3_1',
                                     title: 'אותיות A-E',
                                     quests: [
+                                        {
+                                            id: 'quest1_1_3_1_4',
+                                            title: 'בחר את האות המתאימה',
+                                            word: 'D',
+                                            correctOptIdx: 3,
+                                            opts: [
+                                                { word: 'A' },
+                                                { word: 'B' },
+                                                { word: 'C' },
+                                                { word: 'D' }
+                                            ]
+                                        },
                                         {
                                             id: 'quest1_1_3_1_1',
                                             title: 'בחר את האות המתאימה',
@@ -439,6 +339,18 @@ const originalData = {
                                                 { word: 'B' },
                                                 { word: 'C' },
                                                 { word: 'D' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_1_3_1_5',
+                                            title: 'בחר את האות המתאימה',
+                                            word: 'E',
+                                            correctOptIdx: 0,
+                                            opts: [
+                                                { word: 'E' },
+                                                { word: 'F' },
+                                                { word: 'G' },
+                                                { word: 'H' }
                                             ]
                                         },
                                         {
@@ -464,30 +376,6 @@ const originalData = {
                                                 { word: 'C' },
                                                 { word: 'D' }
                                             ]
-                                        },
-                                        {
-                                            id: 'quest1_1_3_1_4',
-                                            title: 'בחר את האות המתאימה',
-                                            word: 'D',
-                                            correctOptIdx: 3,
-                                            opts: [
-                                                { word: 'A' },
-                                                { word: 'B' },
-                                                { word: 'C' },
-                                                { word: 'D' }
-                                            ]
-                                        },
-                                        {
-                                            id: 'quest1_1_3_1_5',
-                                            title: 'בחר את האות המתאימה',
-                                            word: 'E',
-                                            correctOptIdx: 0,
-                                            opts: [
-                                                { word: 'E' },
-                                                { word: 'F' },
-                                                { word: 'G' },
-                                                { word: 'H' }
-                                            ]
                                         }
                                     ]
                                 },
@@ -496,15 +384,15 @@ const originalData = {
                                     title: 'אותיות F-J',
                                     quests: [
                                         {
-                                            id: 'quest1_1_3_2_1',
+                                            id: 'quest1_1_3_2_5',
                                             title: 'בחר את האות המתאימה',
-                                            word: 'F',
+                                            word: 'J',
                                             correctOptIdx: 0,
                                             opts: [
-                                                { word: 'F' },
-                                                { word: 'G' },
-                                                { word: 'H' },
-                                                { word: 'I' }
+                                                { word: 'J' },
+                                                { word: 'K' },
+                                                { word: 'L' },
+                                                { word: 'M' }
                                             ]
                                         },
                                         {
@@ -512,18 +400,6 @@ const originalData = {
                                             title: 'בחר את האות המתאימה',
                                             word: 'G',
                                             correctOptIdx: 1,
-                                            opts: [
-                                                { word: 'F' },
-                                                { word: 'G' },
-                                                { word: 'H' },
-                                                { word: 'I' }
-                                            ]
-                                        },
-                                        {
-                                            id: 'quest1_1_3_2_3',
-                                            title: 'בחר את האות המתאימה',
-                                            word: 'H',
-                                            correctOptIdx: 2,
                                             opts: [
                                                 { word: 'F' },
                                                 { word: 'G' },
@@ -544,232 +420,33 @@ const originalData = {
                                             ]
                                         },
                                         {
-                                            id: 'quest1_1_3_2_5',
+                                            id: 'quest1_1_3_2_1',
                                             title: 'בחר את האות המתאימה',
-                                            word: 'J',
+                                            word: 'F',
                                             correctOptIdx: 0,
                                             opts: [
-                                                { word: 'J' },
-                                                { word: 'K' },
-                                                { word: 'L' },
-                                                { word: 'M' }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    id: 'lesson1_1_3_3',
-                                    title: 'אותיות K-P',
-                                    quests: [
-                                        {
-                                            id: 'quest1_1_3_3_1',
-                                            title: 'בחר את האות המתאימה',
-                                            word: 'K',
-                                            correctOptIdx: 0,
-                                            opts: [
-                                                { word: 'K' },
-                                                { word: 'L' },
-                                                { word: 'M' },
-                                                { word: 'N' }
+                                                { word: 'F' },
+                                                { word: 'G' },
+                                                { word: 'H' },
+                                                { word: 'I' }
                                             ]
                                         },
                                         {
-                                            id: 'quest1_1_3_3_2',
+                                            id: 'quest1_1_3_2_3',
                                             title: 'בחר את האות המתאימה',
-                                            word: 'L',
-                                            correctOptIdx: 1,
-                                            opts: [
-                                                { word: 'K' },
-                                                { word: 'L' },
-                                                { word: 'M' },
-                                                { word: 'N' }
-                                            ]
-                                        },
-                                        {
-                                            id: 'quest1_1_3_3_3',
-                                            title: 'בחר את האות המתאימה',
-                                            word: 'M',
+                                            word: 'H',
                                             correctOptIdx: 2,
                                             opts: [
-                                                { word: 'K' },
-                                                { word: 'L' },
-                                                { word: 'M' },
-                                                { word: 'N' }
-                                            ]
-                                        },
-                                        {
-                                            id: 'quest1_1_3_3_4',
-                                            title: 'בחר את האות המתאימה',
-                                            word: 'N',
-                                            correctOptIdx: 3,
-                                            opts: [
-                                                { word: 'K' },
-                                                { word: 'L' },
-                                                { word: 'M' },
-                                                { word: 'N' }
-                                            ]
-                                        },
-                                        {
-                                            id: 'quest1_1_3_3_5',
-                                            title: 'בחר את האות המתאימה',
-                                            word: 'O',
-                                            correctOptIdx: 0,
-                                            opts: [
-                                                { word: 'O' },
-                                                { word: 'P' },
-                                                { word: 'Q' },
-                                                { word: 'R' }
-                                            ]
-                                        },
-                                        {
-                                            id: 'quest1_1_3_3_6',
-                                            title: 'בחר את האות המתאימה',
-                                            word: 'P',
-                                            correctOptIdx: 1,
-                                            opts: [
-                                                { word: 'O' },
-                                                { word: 'P' },
-                                                { word: 'Q' },
-                                                { word: 'R' }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    id: 'lesson1_1_3_4',
-                                    title: 'אותיות Q-U',
-                                    quests: [
-                                        {
-                                            id: 'quest1_1_3_4_1',
-                                            title: 'בחר את האות המתאימה',
-                                            word: 'Q',
-                                            correctOptIdx: 0,
-                                            opts: [
-                                                { word: 'Q' },
-                                                { word: 'R' },
-                                                { word: 'S' },
-                                                { word: 'T' }
-                                            ]
-                                        },
-                                        {
-                                            id: 'quest1_1_3_4_2',
-                                            title: 'בחר את האות המתאימה',
-                                            word: 'R',
-                                            correctOptIdx: 1,
-                                            opts: [
-                                                { word: 'Q' },
-                                                { word: 'R' },
-                                                { word: 'S' },
-                                                { word: 'T' }
-                                            ]
-                                        },
-                                        {
-                                            id: 'quest1_1_3_4_3',
-                                            title: 'בחר את האות המתאימה',
-                                            word: 'S',
-                                            correctOptIdx: 2,
-                                            opts: [
-                                                { word: 'Q' },
-                                                { word: 'R' },
-                                                { word: 'S' },
-                                                { word: 'T' }
-                                            ]
-                                        },
-                                        {
-                                            id: 'quest1_1_3_4_4',
-                                            title: 'בחר את האות המתאימה',
-                                            word: 'T',
-                                            correctOptIdx: 3,
-                                            opts: [
-                                                { word: 'Q' },
-                                                { word: 'R' },
-                                                { word: 'S' },
-                                                { word: 'T' }
-                                            ]
-                                        },
-                                        {
-                                            id: 'quest1_1_3_4_5',
-                                            title: 'בחר את האות המתאימה',
-                                            word: 'U',
-                                            correctOptIdx: 0,
-                                            opts: [
-                                                { word: 'U' },
-                                                { word: 'V' },
-                                                { word: 'W' },
-                                                { word: 'X' }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    id: 'lesson1_1_3_5',
-                                    title: 'אותיות V-Z',
-                                    quests: [
-                                        {
-                                            id: 'quest1_1_3_5_1',
-                                            title: 'בחר את האות המתאימה',
-                                            word: 'V',
-                                            correctOptIdx: 0,
-                                            opts: [
-                                                { word: 'V' },
-                                                { word: 'W' },
-                                                { word: 'X' },
-                                                { word: 'Y' }
-                                            ]
-                                        },
-                                        {
-                                            id: 'quest1_1_3_5_2',
-                                            title: 'בחר את האות המתאימה',
-                                            word: 'W',
-                                            correctOptIdx: 1,
-                                            opts: [
-                                                { word: 'V' },
-                                                { word: 'W' },
-                                                { word: 'X' },
-                                                { word: 'Y' }
-                                            ]
-                                        },
-                                        {
-                                            id: 'quest1_1_3_5_3',
-                                            title: 'בחר את האות המתאימה',
-                                            word: 'X',
-                                            correctOptIdx: 2,
-                                            opts: [
-                                                { word: 'V' },
-                                                { word: 'W' },
-                                                { word: 'X' },
-                                                { word: 'Y' }
-                                            ]
-                                        },
-                                        {
-                                            id: 'quest1_1_3_5_4',
-                                            title: 'בחר את האות המתאימה',
-                                            word: 'Y',
-                                            correctOptIdx: 3,
-                                            opts: [
-                                                { word: 'V' },
-                                                { word: 'W' },
-                                                { word: 'X' },
-                                                { word: 'Y' }
-                                            ]
-                                        },
-                                        {
-                                            id: 'quest1_1_3_5_5',
-                                            title: 'בחר את האות המתאימה',
-                                            word: 'Z',
-                                            correctOptIdx: 0,
-                                            opts: [
-                                                { word: 'Z' },
-                                                { word: 'A' },
-                                                { word: 'B' },
-                                                { word: 'C' }
+                                                { word: 'F' },
+                                                { word: 'G' },
+                                                { word: 'H' },
+                                                { word: 'I' }
                                             ]
                                         }
                                     ]
                                 }
                             ]
                         },
-                        // Add the new level here
                         {
                             id: 'level1_1_4',
                             title: 'התאם צמדים',
@@ -970,20 +647,25 @@ const originalData = {
                                     ]
                                 }
                             ]
-                        },
-                        // ... existing code ...
-
+                        }
+                    ]
+                },
+                {
+                    id: 'unit1_2',
+                    title: 'שמות באנגלית',
+                    levels: [
                         {
-                            id: 'level1_1_5',
+                            id: 'level1_2_1',
                             title: 'זיהוי חיות',
                             lessons: [
                                 {
-                                    id: 'lesson1_1_5_1',
+                                    id: 'lesson1_2_1_1',
                                     title: 'חיות חווה',
                                     quests: [
                                         {
-                                            id: 'quest1_1_5_1_1',
-                                            title: 'בחר את החיה הנכונה: Dog',
+                                            id: 'quest1_2_1_1_1',
+                                            title: 'בחר את החיה הנכונה: ',
+                                            speakWord: 'Dog',
                                             correctOptIdx: 0,
                                             opts: [
                                                 { word: '🐕' },
@@ -993,8 +675,9 @@ const originalData = {
                                             ]
                                         },
                                         {
-                                            id: 'quest1_1_5_1_2',
-                                            title: 'בחר את החיה הנכונה: Cat',
+                                            id: 'quest1_2_1_1_2',
+                                            title: 'בחר את החיה הנכונה: ',
+                                            speakWord: 'Cat',
                                             correctOptIdx: 1,
                                             opts: [
                                                 { word: '🐇' },
@@ -1004,8 +687,9 @@ const originalData = {
                                             ]
                                         },
                                         {
-                                            id: 'quest1_1_5_1_3',
-                                            title: 'בחר את החיה הנכונה: Horse',
+                                            id: 'quest1_2_1_1_3',
+                                            title: 'בחר את החיה הנכונה: ',
+                                            speakWord: 'Horse',
                                             correctOptIdx: 2,
                                             opts: [
                                                 { word: '🐂' },
@@ -1015,8 +699,9 @@ const originalData = {
                                             ]
                                         },
                                         {
-                                            id: 'quest1_1_5_1_4',
-                                            title: 'בחר את החיה הנכונה: Pig',
+                                            id: 'quest1_2_1_1_4',
+                                            title: 'בחר את החיה הנכונה: ',
+                                            speakWord: 'Pig',
                                             correctOptIdx: 3,
                                             opts: [
                                                 { word: '🐑' },
@@ -1026,8 +711,9 @@ const originalData = {
                                             ]
                                         },
                                         {
-                                            id: 'quest1_1_5_1_5',
-                                            title: 'בחר את החיה הנכונה: Cow',
+                                            id: 'quest1_2_1_1_5',
+                                            title: 'בחר את החיה הנכונה: ',
+                                            speakWord: 'Cow',
                                             correctOptIdx: 3,
                                             opts: [
                                                 { word: '🐃' },
@@ -1039,143 +725,145 @@ const originalData = {
                                     ]
                                 },
                                 {
-                                    id: 'lesson1_1_5_2',
+                                    id: 'lesson1_2_1_2',
                                     title: 'חיות בר',
                                     quests: [
                                         {
-                                            id: 'quest1_1_5_2_1',
-                                            title: 'בחר את החיה הנכונה: Elephant',
+                                            id: 'quest1_2_1_2_1',
+                                            title: 'בחר את החיה הנכונה: ',
+                                            speakWord: 'Lion',
                                             correctOptIdx: 0,
                                             opts: [
-                                                { word: '🐘' },
-                                                { word: '🦏' },
-                                                { word: '🦛' },
-                                                { word: '🐪' }
-                                            ]
-                                        },
-                                        {
-                                            id: 'quest1_1_5_2_2',
-                                            title: 'בחר את החיה הנכונה: Lion',
-                                            correctOptIdx: 1,
-                                            opts: [
-                                                { word: '🐯' },
                                                 { word: '🦁' },
+                                                { word: '🐯' },
                                                 { word: '🐆' },
                                                 { word: '🐅' }
                                             ]
                                         },
                                         {
-                                            id: 'quest1_1_5_2_3',
-                                            title: 'בחר את החיה הנכונה: Monkey',
+                                            id: 'quest1_2_1_2_2',
+                                            title: 'בחר את החיה הנכונה: ',
+                                            speakWord: 'Elephant',
+                                            correctOptIdx: 1,
+                                            opts: [
+                                                { word: '🦏' },
+                                                { word: '🐘' },
+                                                { word: '🦛' },
+                                                { word: '🦒' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_2_1_2_3',
+                                            title: 'בחר את החיה הנכונה: ',
+                                            speakWord: 'Monkey',
                                             correctOptIdx: 2,
                                             opts: [
-                                                { word: '🦍' },
-                                                { word: '🦧' },
-                                                { word: '🐒' },
-                                                { word: '🐵' }
-                                            ]
-                                        },
-                                        {
-                                            id: 'quest1_1_5_2_4',
-                                            title: 'בחר את החיה הנכונה: Bear',
-                                            correctOptIdx: 3,
-                                            opts: [
+                                                { word: '🦊' },
                                                 { word: '🦝' },
-                                                { word: '🦡' },
-                                                { word: '🦨' },
-                                                { word: '🐻' }
-                                            ]
-                                        },
-                                        {
-                                            id: 'quest1_1_5_2_5',
-                                            title: 'בחר את החיה הנכונה: Giraffe',
-                                            correctOptIdx: 0,
-                                            opts: [
-                                                { word: '🦒' },
-                                                { word: '🦓' },
-                                                { word: '🦌' },
-                                                { word: '🦘' }
+                                                { word: '🐒' },
+                                                { word: '🦥' }
                                             ]
                                         }
                                     ]
                                 },
                                 {
-                                    id: 'lesson1_1_5_3',
-                                    title: 'חיות מגוונות',
+                                    id: 'lesson1_2_1_3',
+                                    title: 'חיות ים',
                                     quests: [
                                         {
-                                            id: 'quest1_1_5_3_1',
-                                            title: 'בחר את החיה הנכונה: Sheep',
+                                            id: 'quest1_2_1_3_1',
+                                            title: 'בחר את החיה הנכונה: ',
+                                            speakWord: 'Fish',
                                             correctOptIdx: 0,
                                             opts: [
-                                                { word: '🐑' },
-                                                { word: '🐐' },
-                                                { word: '🦙' },
-                                                { word: '🐫' }
+                                                { word: '🐠' },
+                                                { word: '🦈' },
+                                                { word: '🐋' },
+                                                { word: '🦑' }
                                             ]
                                         },
                                         {
-                                            id: 'quest1_1_5_3_2',
-                                            title: 'בחר את החיה הנכונה: Chicken',
+                                            id: 'quest1_2_1_3_2',
+                                            title: 'בחר את החיה הנכונה: ',
+                                            speakWord: 'Dolphin',
+                                            correctOptIdx: 1,
+                                            opts: [
+                                                { word: '🐋' },
+                                                { word: '🐬' },
+                                                { word: '🦈' },
+                                                { word: '🐡' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_2_1_3_3',
+                                            title: 'בחר את החיה הנכונה: ',
+                                            speakWord: 'Octopus',
+                                            correctOptIdx: 2,
+                                            opts: [
+                                                { word: '🦑' },
+                                                { word: '🦐' },
+                                                { word: '🐙' },
+                                                { word: '🦀' }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    id: 'lesson1_2_1_4',
+                                    title: 'חיות מעופפות',
+                                    quests: [
+                                        {
+                                            id: 'quest1_2_1_4_1',
+                                            title: 'בחר את החיה הנכונה: ',
+                                            speakWord: 'Bird',
+                                            correctOptIdx: 0,
+                                            opts: [
+                                                { word: '🐦' },
+                                                { word: '🦅' },
+                                                { word: '🦉' },
+                                                { word: '🦆' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_2_1_4_2',
+                                            title: 'בחר את החיה הנכונה: ',
+                                            speakWord: 'Eagle',
                                             correctOptIdx: 1,
                                             opts: [
                                                 { word: '🦃' },
-                                                { word: '🐔' },
-                                                { word: '🦆' },
-                                                { word: '🦢' }
-                                            ]
-                                        },
-                                        {
-                                            id: 'quest1_1_5_3_3',
-                                            title: 'בחר את החיה הנכונה: Rabbit',
-                                            correctOptIdx: 2,
-                                            opts: [
-                                                { word: '🐹' },
-                                                { word: '🐀' },
-                                                { word: '🐇' },
-                                                { word: '🦔' }
-                                            ]
-                                        },
-                                        {
-                                            id: 'quest1_1_5_3_4',
-                                            title: 'בחר את החיה הנכונה: Penguin',
-                                            correctOptIdx: 1,
-                                            opts: [
                                                 { word: '🦅' },
-                                                { word: '🐧' },
-                                                { word: '🦉' },
-                                                { word: '🐹' }
+                                                { word: '🦢' },
+                                                { word: '🦩' }
                                             ]
                                         },
                                         {
-                                            id: 'quest1_1_5_3_5',
-                                            title: 'בחר את החיה הנכונה: Crocodile',
+                                            id: 'quest1_2_1_4_3',
+                                            title: 'בחר את החיה הנכונה: ',
+                                            speakWord: 'Owl',
                                             correctOptIdx: 2,
                                             opts: [
-                                                { word: '🦎' },
-                                                { word: '🐊' },
-                                                { word: '🐊' },
-                                                { word: '🦕' }
+                                                { word: '🦜' },
+                                                { word: '🦚' },
+                                                { word: '🦉' },
+                                                { word: '🐦' }
                                             ]
                                         }
                                     ]
                                 }
-
                             ]
                         },
-                        // ... existing code ...
-
                         {
-                            id: 'level1_1_6',
+                            id: 'level1_2_2',
                             title: 'שמות החיות',
                             lessons: [
                                 {
-                                    id: 'lesson1_1_6_1',
+                                    id: 'lesson1_2_2_1',
                                     title: 'חיות חווה ובית',
                                     quests: [
                                         {
-                                            id: 'quest1_1_6_1_1',
-                                            title: 'בחר את שם החיה הנכון: 🐕',
+                                            id: 'quest1_2_2_1_1',
+                                            title: 'בחר את שם החיה הנכון:',
+                                            speakWord: '🐕',
                                             correctOptIdx: 0,
                                             opts: [
                                                 { word: 'Dog' },
@@ -1185,8 +873,9 @@ const originalData = {
                                             ]
                                         },
                                         {
-                                            id: 'quest1_1_6_1_2',
-                                            title: 'בחר את שם החיה הנכון: 🐈',
+                                            id: 'quest1_2_2_1_2',
+                                            title: 'בחר את שם החיה הנכון:',
+                                            speakWord: '🐈',
                                             correctOptIdx: 1,
                                             opts: [
                                                 { word: 'Rabbit' },
@@ -1196,165 +885,435 @@ const originalData = {
                                             ]
                                         },
                                         {
-                                            id: 'quest1_1_6_1_3',
-                                            title: 'בחר את שם החיה הנכון: 🐎',
+                                            id: 'quest1_2_2_1_3',
+                                            title: 'בחר את שם החיה הנכון:',
+                                            speakWord: '🐇',
                                             correctOptIdx: 2,
                                             opts: [
-                                                { word: 'Cow' },
-                                                { word: 'Zebra' },
-                                                { word: 'Horse' },
-                                                { word: 'Deer' }
+                                                { word: 'Rabbit' },
+                                                { word: 'Cat' },
+                                                { word: 'Fox' },
+                                                { word: 'Monkey' }
                                             ]
                                         },
                                         {
-                                            id: 'quest1_1_6_1_4',
-                                            title: 'בחר את שם החיה הנכון: 🐖',
+                                            id: 'quest1_2_2_1_4',
+                                            title: 'בחר את שם החיה הנכון:',
+                                            speakWord: '🦊',
                                             correctOptIdx: 3,
                                             opts: [
-                                                { word: 'Sheep' },
-                                                { word: 'Goat' },
-                                                { word: 'Cow' },
-                                                { word: 'Pig' }
+                                                { word: 'Fox' },
+                                                { word: 'Raccoon' },
+                                                { word: 'Monkey' },
+                                                { word: 'Sloth' }
                                             ]
                                         },
                                         {
-                                            id: 'quest1_1_6_1_5',
-                                            title: 'בחר את שם החיה הנכון: 🐄',
-                                            correctOptIdx: 2,
+                                            id: 'quest1_2_2_1_5',
+                                            title: 'בחר את שם החיה הנכון:',
+                                            speakWord: '🐒',
+                                            correctOptIdx: 4,
                                             opts: [
-                                                { word: 'Buffalo' },
-                                                { word: 'Ox' },
-                                                { word: 'Cow' },
-                                                { word: 'Deer' }
+                                                { word: 'Fox' },
+                                                { word: 'Raccoon' },
+                                                { word: 'Monkey' },
+                                                { word: 'Sloth' }
                                             ]
                                         }
                                     ]
                                 },
                                 {
-                                    id: 'lesson1_1_6_2',
+                                    id: 'lesson1_2_2_2',
                                     title: 'חיות בר',
                                     quests: [
                                         {
-                                            id: 'quest1_1_6_2_1',
-                                            title: 'בחר את שם החיה הנכון: 🐘',
+                                            id: 'quest1_2_2_2_1',
+                                            title: 'בחר את שם החיה הנכון:',
+                                            speakWord: '🦁',
                                             correctOptIdx: 0,
                                             opts: [
-                                                { word: 'Elephant' },
-                                                { word: 'Rhino' },
-                                                { word: 'Hippo' },
-                                                { word: 'Camel' }
-                                            ]
-                                        },
-                                        {
-                                            id: 'quest1_1_6_2_2',
-                                            title: 'בחר את שם החיה הנכון: 🦁',
-                                            correctOptIdx: 1,
-                                            opts: [
-                                                { word: 'Tiger' },
                                                 { word: 'Lion' },
+                                                { word: 'Tiger' },
                                                 { word: 'Leopard' },
                                                 { word: 'Cheetah' }
                                             ]
                                         },
                                         {
-                                            id: 'quest1_1_6_2_3',
-                                            title: 'בחר את שם החיה הנכון: 🐒',
+                                            id: 'quest1_2_2_2_2',
+                                            title: 'בחר את שם החיה הנכון:',
+                                            speakWord: '🐘',
+                                            correctOptIdx: 1,
+                                            opts: [
+                                                { word: 'Rhino' },
+                                                { word: 'Elephant' },
+                                                { word: 'Hippo' },
+                                                { word: 'Giraffe' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_2_2_2_3',
+                                            title: 'בחר את שם החיה הנכון:',
+                                            speakWord: '🐒',
                                             correctOptIdx: 2,
                                             opts: [
-                                                { word: 'Gorilla' },
-                                                { word: 'Orangutan' },
-                                                { word: 'Monkey' },
-                                                { word: 'Chimpanzee' }
-                                            ]
-                                        },
-                                        {
-                                            id: 'quest1_1_6_2_4',
-                                            title: 'בחר את שם החיה הנכון: 🐻',
-                                            correctOptIdx: 3,
-                                            opts: [
+                                                { word: 'Fox' },
                                                 { word: 'Raccoon' },
-                                                { word: 'Badger' },
-                                                { word: 'Skunk' },
-                                                { word: 'Bear' }
-                                            ]
-                                        },
-                                        {
-                                            id: 'quest1_1_6_2_5',
-                                            title: 'בחר את שם החיה הנכון: 🦒',
-                                            correctOptIdx: 0,
-                                            opts: [
-                                                { word: 'Giraffe' },
-                                                { word: 'Zebra' },
-                                                { word: 'Deer' },
-                                                { word: 'Kangaroo' }
+                                                { word: 'Monkey' },
+                                                { word: 'Sloth' }
                                             ]
                                         }
                                     ]
                                 },
                                 {
-                                    id: 'lesson1_1_6_3',
-                                    title: 'חיות מגוונות',
+                                    id: 'lesson1_2_2_3',
+                                    title: 'חיות ים',
                                     quests: [
                                         {
-                                            id: 'quest1_1_6_3_1',
-                                            title: 'בחר את שם החיה הנכון: 🐑',
+                                            id: 'quest1_2_2_3_1',
+                                            title: 'בחר את שם החיה הנכון:',
+                                            speakWord: '🐠',
                                             correctOptIdx: 0,
                                             opts: [
-                                                { word: 'Sheep' },
-                                                { word: 'Goat' },
-                                                { word: 'Llama' },
-                                                { word: 'Camel' }
+                                                { word: 'Fish' },
+                                                { word: 'Shark' },
+                                                { word: 'Whale' },
+                                                { word: 'Squid' }
                                             ]
                                         },
                                         {
-                                            id: 'quest1_1_6_3_2',
-                                            title: 'בחר את שם החיה הנכון: 🐔',
+                                            id: 'quest1_2_2_3_2',
+                                            title: 'בחר את שם החיה הנכון:',
+                                            speakWord: '🐬',
+                                            correctOptIdx: 1,
+                                            opts: [
+                                                { word: 'Whale' },
+                                                { word: 'Dolphin' },
+                                                { word: 'Shark' },
+                                                { word: 'Blowfish' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_2_2_3_3',
+                                            title: 'בחר את שם החיה הנכון:',
+                                            speakWord: '🐙',
+                                            correctOptIdx: 2,
+                                            opts: [
+                                                { word: 'Squid' },
+                                                { word: 'Shrimp' },
+                                                { word: 'Octopus' },
+                                                { word: 'Crab' }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    id: 'lesson1_2_2_4',
+                                    title: 'חיות מעופפות',
+                                    quests: [
+                                        {
+                                            id: 'quest1_2_2_4_1',
+                                            title: 'בחר את שם החיה הנכון:',
+                                            speakWord: '🐦',
+                                            correctOptIdx: 0,
+                                            opts: [
+                                                { word: 'Bird' },
+                                                { word: 'Eagle' },
+                                                { word: 'Owl' },
+                                                { word: 'Duck' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_2_2_4_2',
+                                            title: 'בחר את שם החיה הנכון:',
+                                            speakWord: '🦅',
                                             correctOptIdx: 1,
                                             opts: [
                                                 { word: 'Turkey' },
-                                                { word: 'Chicken' },
-                                                { word: 'Duck' },
-                                                { word: 'Swan' }
+                                                { word: 'Eagle' },
+                                                { word: 'Swan' },
+                                                { word: 'Flamingo' }
                                             ]
                                         },
                                         {
-                                            id: 'quest1_1_6_3_3',
-                                            title: 'בחר את שם החיה הנכון: 🐇',
+                                            id: 'quest1_2_2_4_3',
+                                            title: 'בחר את שם החיה הנכון:',
+                                            speakWord: '🦉',
                                             correctOptIdx: 2,
                                             opts: [
-                                                { word: 'Hamster' },
-                                                { word: 'Rat' },
-                                                { word: 'Rabbit' },
-                                                { word: 'Hedgehog' }
+                                                { word: 'Parrot' },
+                                                { word: 'Peacock' },
+                                                { word: 'Owl' },
+                                                { word: 'Sparrow' }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            id: 'level1_2_3',
+                            title: 'זיהוי פירות',
+                            lessons: [
+                                {
+                                    id: 'lesson1_2_3_1',
+                                    title: 'פירות בסיסיים',
+                                    quests: [
+                                        {
+                                            id: 'quest1_2_3_1_1',
+                                            title: 'בחר את הפרי הנכון: ',
+                                            speakWord: 'Apple',
+                                            correctOptIdx: 0,
+                                            opts: [
+                                                { word: '🍎' },
+                                                { word: '🍐' },
+                                                { word: '🍊' },
+                                                { word: '🍌' }
                                             ]
                                         },
                                         {
-                                            id: 'quest1_1_6_3_4',
-                                            title: 'בחר את שם החיה הנכון: 🐧',
+                                            id: 'quest1_2_3_1_2',
+                                            title: 'בחר את הפרי הנכון: ',
+                                            speakWord: 'Banana',
                                             correctOptIdx: 1,
                                             opts: [
-                                                { word: 'Eagle' },
-                                                { word: 'Penguin' },
-                                                { word: 'Owl' },
-                                                { word: 'Ostrich' }
+                                                { word: '🍎' },
+                                                { word: '🍌' },
+                                                { word: '🍊' },
+                                                { word: '🍇' }
                                             ]
                                         },
                                         {
-                                            id: 'quest1_1_6_3_5',
-                                            title: 'בחר את שם החיה הנכון: 🐊',
+                                            id: 'quest1_2_3_1_3',
+                                            title: 'בחר את הפרי הנכון: ',
+                                            speakWord: 'Orange',
                                             correctOptIdx: 2,
                                             opts: [
-                                                { word: 'Lizard' },
-                                                { word: 'Alligator' },
-                                                { word: 'Crocodile' },
-                                                { word: 'Dinosaur' }
+                                                { word: '🍎' },
+                                                { word: '🍌' },
+                                                { word: '🍊' },
+                                                { word: '🍇' }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    id: 'lesson1_2_3_2',
+                                    title: 'פירות נוספים',
+                                    quests: [
+                                        {
+                                            id: 'quest1_2_3_2_1',
+                                            title: 'בחר את הפרי הנכון: ',
+                                            speakWord: 'Grapes',
+                                            correctOptIdx: 0,
+                                            opts: [
+                                                { word: '🍇' },
+                                                { word: '🍓' },
+                                                { word: '🍑' },
+                                                { word: '🍒' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_2_3_2_2',
+                                            title: 'בחר את הפרי הנכון: ',
+                                            speakWord: 'Strawberry',
+                                            correctOptIdx: 1,
+                                            opts: [
+                                                { word: '🍇' },
+                                                { word: '🍓' },
+                                                { word: '🍑' },
+                                                { word: '🍒' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_2_3_2_3',
+                                            title: 'בחר את הפרי הנכון: ',
+                                            speakWord: 'Cherry',
+                                            correctOptIdx: 3,
+                                            opts: [
+                                                { word: '🍇' },
+                                                { word: '🍓' },
+                                                { word: '🍑' },
+                                                { word: '🍒' }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    id: 'lesson1_2_3_3',
+                                    title: 'פירות טרופיים',
+                                    quests: [
+                                        {
+                                            id: 'quest1_2_3_3_1',
+                                            title: 'בחר את הפרי הנכון: ',
+                                            speakWord: 'Pineapple',
+                                            correctOptIdx: 0,
+                                            opts: [
+                                                { word: '🍍' },
+                                                { word: '🥝' },
+                                                { word: '🥭' },
+                                                { word: '🍐' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_2_3_3_2',
+                                            title: 'בחר את הפרי הנכון: ',
+                                            speakWord: 'Kiwi',
+                                            correctOptIdx: 1,
+                                            opts: [
+                                                { word: '🍍' },
+                                                { word: '🥝' },
+                                                { word: '🥭' },
+                                                { word: '🍐' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_2_3_3_3',
+                                            title: 'בחר את הפרי הנכון: ',
+                                            speakWord: 'Mango',
+                                            correctOptIdx: 2,
+                                            opts: [
+                                                { word: '🍍' },
+                                                { word: '🥝' },
+                                                { word: '🥭' },
+                                                { word: '🍐' }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            id: 'level1_2_4',
+                            title: 'שמות הפירות',
+                            lessons: [
+                                {
+                                    id: 'lesson1_2_4_1',
+                                    title: 'פירות בסיסיים',
+                                    quests: [
+                                        {
+                                            id: 'quest1_2_4_1_1',
+                                            title: 'בחר את שם הפרי הנכון:',
+                                            speakWord: '🍎',
+                                            correctOptIdx: 0,
+                                            opts: [
+                                                { word: 'Apple' },
+                                                { word: 'Pear' },
+                                                { word: 'Orange' },
+                                                { word: 'Banana' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_2_4_1_2',
+                                            title: 'בחר את שם הפרי הנכון:',
+                                            speakWord: '🍌',
+                                            correctOptIdx: 1,
+                                            opts: [
+                                                { word: 'Apple' },
+                                                { word: 'Banana' },
+                                                { word: 'Orange' },
+                                                { word: 'Grapes' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_2_4_1_3',
+                                            title: 'בחר את שם הפרי הנכון:',
+                                            speakWord: '🍊',
+                                            correctOptIdx: 2,
+                                            opts: [
+                                                { word: 'Apple' },
+                                                { word: 'Banana' },
+                                                { word: 'Orange' },
+                                                { word: 'Grapes' }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    id: 'lesson1_2_4_2',
+                                    title: 'פירות נוספים',
+                                    quests: [
+                                        {
+                                            id: 'quest1_2_4_2_1',
+                                            title: 'בחר את שם הפרי הנכון:',
+                                            speakWord: '🍇',
+                                            correctOptIdx: 0,
+                                            opts: [
+                                                { word: 'Grapes' },
+                                                { word: 'Strawberry' },
+                                                { word: 'Peach' },
+                                                { word: 'Cherry' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_2_4_2_2',
+                                            title: 'בחר את שם הפרי הנכון:',
+                                            speakWord: '🍓',
+                                            correctOptIdx: 1,
+                                            opts: [
+                                                { word: 'Grapes' },
+                                                { word: 'Strawberry' },
+                                                { word: 'Peach' },
+                                                { word: 'Cherry' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_2_4_2_3',
+                                            title: 'בחר את שם הפרי הנכון:',
+                                            speakWord: '🍒',
+                                            correctOptIdx: 3,
+                                            opts: [
+                                                { word: 'Grapes' },
+                                                { word: 'Strawberry' },
+                                                { word: 'Peach' },
+                                                { word: 'Cherry' }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    id: 'lesson1_2_4_3',
+                                    title: 'פירות טרופיים',
+                                    quests: [
+                                        {
+                                            id: 'quest1_2_4_3_1',
+                                            title: 'בחר את שם הפרי הנכון:',
+                                            speakWord: '🍍',
+                                            correctOptIdx: 0,
+                                            opts: [
+                                                { word: 'Pineapple' },
+                                                { word: 'Kiwi' },
+                                                { word: 'Mango' },
+                                                { word: 'Pear' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_2_4_3_2',
+                                            title: 'בחר את שם הפרי הנכון:',
+                                            speakWord: '🥝',
+                                            correctOptIdx: 1,
+                                            opts: [
+                                                { word: 'Pineapple' },
+                                                { word: 'Kiwi' },
+                                                { word: 'Mango' },
+                                                { word: 'Pear' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_2_4_3_3',
+                                            title: 'בחר את שם הפרי הנכון:',
+                                            speakWord: '🥭',
+                                            correctOptIdx: 2,
+                                            opts: [
+                                                { word: 'Pineapple' },
+                                                { word: 'Kiwi' },
+                                                { word: 'Mango' },
+                                                { word: 'Pear' }
                                             ]
                                         }
                                     ]
                                 }
                             ]
                         }
-
                     ]
                 }
             ]

@@ -17,7 +17,7 @@ export async function profilePageContent() {
             <div class="user-info">
                 <img src="${user.imgUrl}" alt="${user.fullname}" class="profile-image">
                 <h2>${user.fullname}</h2>
-                <p>ניקוד כולל: ${user.score}</p>
+                <p>ניקוד כולל: ${user.score} 💰</p>
                 <img class="go" src="img/brain/go1.gif" />
             </div>
             <div class="progress-charts">

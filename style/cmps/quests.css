@@ -101,6 +101,9 @@
     transition: bottom 0.3s ease-out;
     z-index: 1000;
     text-align: center;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease-in-out;
 }
 
 .feedback-overlay.show {
@@ -257,11 +260,13 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
-    transform: translateY(100%);
-    transition: transform 0.5s ease-out;
+    opacity: 0;
+    transform: translateY(20%);  /* reduced from 100% for subtler effect */
+    transition: all 0.5s ease-out;
 }
 
 .dog-image.animate {
+    opacity: 1;
     transform: translateY(0);
 }
 
@@ -311,7 +316,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-    width: 40vw;
+    width: min(40vw, 600px);
 }
 
 .couples-quest .left-column,
@@ -322,9 +327,9 @@
 }
 
 .couples-quest .option-btn {
-    margin: 10px 0;
-    padding: 15px 10px;
-    font-size: 24px;
+    margin: 5px 0;
+    padding: 10px 8px;
+    font-size: 20px;
     background-color: rgba(255, 255, 255, 0.7);
     border: 2px solid #007bff;
     border-radius: 10px;
@@ -333,8 +338,8 @@
 }
 
 .couples-quest .word-button {
-    font-size: 18px;
-    padding: 15px 10px;
+    font-size: 16px;
+    padding: 10px 8px;
     white-space: nowrap;
 }
 
@@ -358,5 +363,130 @@
     background-color: #dc3545;
     color: white;
     border-color: #dc3545;
+}
+
+@keyframes tada {
+    0% { transform: scale(1) }
+    10%, 20% { transform: scale(0.9) rotate(-3deg) }
+    30%, 50%, 70%, 90% { transform: scale(1.1) rotate(3deg) }
+    40%, 60%, 80% { transform: scale(1.1) rotate(-3deg) }
+    100% { transform: scale(1) rotate(0) }
+}
+
+.compliment.animate {
+    display: inline-block;
+    animation: tada 1s ease-in-out;
+    font-size: 1.5em;
+    color: #ff6b6b;
+    margin: 20px 0;
+}
+
+.speak-word {
+    cursor: pointer;
+    color: #2196F3;
+    margin-inline-start: 8px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.speak-word:hover {
+    color: #1976D2;
+}
+
+.speak-word:active {
+    color: #0D47A1;
+}
+
+.quest-word.clickable {
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: all 0.2s ease;
+}
+
+.quest-word.clickable:hover {
+    color: #0066cc;
+    transform: scale(1.05);
+}
+
+.feedback-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.feedback-dog {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    animation: bounceIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.feedback-message {
+    text-align: center;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.check-mark {
+    color: #4CAF50;
+    font-size: 48px;
+    margin: 0;
+}
+
+.wrong-mark {
+    color: #f44336;
+    font-size: 48px;
+    margin: 0;
+}
+
+.cheer {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Desktop-specific adjustments */
+@media screen and (min-width: 768px) {
+    .couples-quest .columns-container {
+        width: min(30vw, 300px);
+        margin-top: 10px;
+    }
+
+    .couples-quest .option-btn {
+        margin: 3px 0;
+        padding: 8px 6px;
+        font-size: 16px;
+    }
+
+    .couples-quest .word-button {
+        font-size: 14px;
+        padding: 8px 6px;
+    }
 }
 

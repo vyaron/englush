@@ -45,6 +45,8 @@ const setupFunctions = {
 
 function createBottomNavbar() {
     const currentPage = window.location.hash.split('?')[0] || '#home'
+    const userScore = userService.getLoggedinUser().score
+    
     return `
         <nav class="bottom-navbar">
             <a href="#home" class="nav-item ${currentPage === '#home' ? 'active' : ''}">
@@ -58,6 +60,7 @@ function createBottomNavbar() {
             <a href="#profile" class="nav-item ${currentPage === '#profile' ? 'active' : ''}">
                 <i class="fas fa-user"></i>
                 <span>פרופיל</span>
+                <span class="user-score">💰 ${userScore}</span>
             </a>
         </nav>
     `

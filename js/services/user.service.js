@@ -105,24 +105,45 @@ function getProgressPercentage(sectionId, unitId, levelId, lessonId) {
     if (!user || !user.progress) return 0
     
     const section = user.progress.sections[sectionId]
-    if (!section) return 0
-    
-    if (lessonId) {
-        const lesson = section.units[unitId].levels[levelId].lessons[lessonId]
-        return (lesson.completedQuests / lesson.totalQuests) * 100
+    if (!section) {
+        initializeUserProgress() // Reset progress if section doesn't exist
+        return 0
     }
     
-    if (levelId) {
-        const level = section.units[unitId].levels[levelId]
-        return (level.completedLessons / level.totalLessons) * 100
+    try {
+        if (lessonId) {
+            const lesson = section.units?.[unitId]?.levels?.[levelId]?.lessons?.[lessonId]
+            if (!lesson) {
+                initializeUserProgress()
+                return 0
+            }
+            return (lesson.completedQuests / lesson.totalQuests) * 100
+        }
+        
+        if (levelId) {
+            const level = section.units?.[unitId]?.levels?.[levelId]
+            if (!level) {
+                initializeUserProgress()
+                return 0
+            }
+            return (level.completedLessons / level.totalLessons) * 100
+        }
+        
+        if (unitId) {
+            const unit = section.units?.[unitId]
+            if (!unit) {
+                initializeUserProgress()
+                return 0
+            }
+            return (unit.completedLevels / unit.totalLevels) * 100
+        }
+        
+        return (section.completedUnits / section.totalUnits) * 100
+    } catch (error) {
+        console.error('Error calculating progress, reinitializing user progress:', error)
+        initializeUserProgress()
+        return 0
     }
-    
-    if (unitId) {
-        const unit = section.units[unitId]
-        return (unit.completedLevels / unit.totalLevels) * 100
-    }
-    
-    return (section.completedUnits / section.totalUnits) * 100
 }
 
 function _saveLocalUser(user) {
