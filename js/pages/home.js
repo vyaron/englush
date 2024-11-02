@@ -7,8 +7,8 @@ export function homePageContent() {
             <h1 class="home-title">אינגלוש</h1>
             <h2 class="home-subtitle">ללמוד אנגלית בכיף</h2>
             ${user ? `<p class="welcome-message">כיף לראותך שוב ${user.fullname}</p>` : ''}
-            <img src="img/dog.png" alt="Mascot" class="mascot-img">
-            <a href="#sections" class="start-btn">התחל</a>
+            <img src="img/dog.png" alt="Mascot" class="mascot-img animate-bounce">
+            <a href="#sections" class="start-btn animate-pulse">התחל</a>
         </div>
     `
 }
