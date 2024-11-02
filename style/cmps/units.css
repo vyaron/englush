@@ -70,7 +70,7 @@
     background-color: #e0e0e0;
     border-radius: 5px;
     overflow: hidden;
-    margin: 5px 0;
+    margin: 5px 0 2em;
 }
 
 .progress {
@@ -78,3 +78,45 @@
     background-color: #4CAF50;
     transition: width 0.3s ease;
 }
+
+.unit > h3 {
+    font-size: 1.5em;
+    color: gold;
+}
+
+.unit .progress-title {
+    color: gold;
+}
+
+.section-progress {
+    color: whitesmoke;
+}
+
+details summary {
+    cursor: pointer;
+}
+
+.lesson-link {
+    color: orange;
+}
+.lesson-list .lesson-progress {
+    color: orange;
+}
+
+.level[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+  }
+  
+  .level summary {
+    cursor: pointer;
+    transition: margin 0.3s ease;
+  }
+  
+  .level summary:hover {
+    margin-left: 10px;
+  }
+  
+  @keyframes sweep {
+    0%    {opacity: 0; transform: translateX(-10px)}
+    100%  {opacity: 1; transform: translateX(0)}
+  }
