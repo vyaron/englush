@@ -681,7 +681,7 @@ const originalData = {
                                             correctOptIdx: 1,
                                             opts: [
                                                 { word: '🐇' },
-                                                { word: '🐈' },
+                                                { word: '����' },
                                                 { word: '🦊' },
                                                 { word: '🐒' }
                                             ]
@@ -1308,6 +1308,294 @@ const originalData = {
                                                 { word: 'Kiwi' },
                                                 { word: 'Mango' },
                                                 { word: 'Pear' }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    id: 'unit1_3',
+                    title: 'ימי השבוע, חודשים ושעות',
+                    levels: [
+                        {
+                            id: 'level1_3_1',
+                            title: 'ימי השבוע',
+                            lessons: [
+                                {
+                                    id: 'lesson1_3_1_1',
+                                    title: 'ימי השבוע - חלק א׳',
+                                    quests: [
+                                        {
+                                            id: 'quest1_3_1_1_1',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Wednesday',
+                                            correctOptIdx: 2,
+                                            opts: [
+                                                { word: 'יום שישי' },
+                                                { word: 'יום שני' },
+                                                { word: 'יום רביעי' },
+                                                { word: 'יום ראשון' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_3_1_1_2',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Friday',
+                                            correctOptIdx: 0,
+                                            opts: [
+                                                { word: 'יום שישי' },
+                                                { word: 'יום שלישי' },
+                                                { word: 'יום חמישי' },
+                                                { word: 'יום שבת' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_3_1_1_3',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Sunday',
+                                            correctOptIdx: 3,
+                                            opts: [
+                                                { word: 'יום שלישי' },
+                                                { word: 'יום שישי' },
+                                                { word: 'יום שני' },
+                                                { word: 'יום ראשון' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_3_1_1_4',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Monday',
+                                            correctOptIdx: 1,
+                                            opts: [
+                                                { word: 'יום רביעי' },
+                                                { word: 'יום שני' },
+                                                { word: 'יום חמישי' },
+                                                { word: 'יום שישי' }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    id: 'lesson1_3_1_2',
+                                    title: 'ימי השבוע - חלק ב׳',
+                                    quests: [
+                                        {
+                                            id: 'quest1_3_1_2_1',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Saturday',
+                                            correctOptIdx: 3,
+                                            opts: [
+                                                { word: 'יום רביעי' },
+                                                { word: 'יום חמישי' },
+                                                { word: 'יום שישי' },
+                                                { word: 'יום שבת' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_3_1_2_2',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Tuesday',
+                                            correctOptIdx: 1,
+                                            opts: [
+                                                { word: 'יום ראשון' },
+                                                { word: 'יום שלישי' },
+                                                { word: 'יום שני' },
+                                                { word: 'יום רביעי' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_3_1_2_3',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Thursday',
+                                            correctOptIdx: 0,
+                                            opts: [
+                                                { word: 'יום חמישי' },
+                                                { word: 'יום שלישי' },
+                                                { word: 'יום שישי' },
+                                                { word: 'יום ראשון' }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            id: 'level1_3_2',
+                            title: 'החודשים',
+                            lessons: [
+                                {
+                                    id: 'lesson1_3_2_1',
+                                    title: 'חודשי השנה - חלק א׳',
+                                    quests: [
+                                        {
+                                            id: 'quest1_3_2_1_1',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'July',
+                                            correctOptIdx: 2,
+                                            opts: [
+                                                { word: 'מרץ' },
+                                                { word: 'מאי' },
+                                                { word: 'יולי' },
+                                                { word: 'ינואר' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_3_2_1_2',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'March',
+                                            correctOptIdx: 0,
+                                            opts: [
+                                                { word: 'מרץ' },
+                                                { word: 'ספטמבר' },
+                                                { word: 'אפריל' },
+                                                { word: 'אוגוסט' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_3_2_1_3',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'October',
+                                            correctOptIdx: 1,
+                                            opts: [
+                                                { word: 'דצמבר' },
+                                                { word: 'אוקטובר' },
+                                                { word: 'נובמבר' },
+                                                { word: 'פברואר' }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    id: 'lesson1_3_2_2',
+                                    title: 'חודשי השנה - חלק ב׳',
+                                    quests: [
+                                        {
+                                            id: 'quest1_3_2_2_1',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'September',
+                                            correctOptIdx: 2,
+                                            opts: [
+                                                { word: 'אוגוסט' },
+                                                { word: 'יולי' },
+                                                { word: 'ספטמבר' },
+                                                { word: 'אוקטובר' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_3_2_2_2',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'April',
+                                            correctOptIdx: 0,
+                                            opts: [
+                                                { word: 'אפריל' },
+                                                { word: 'מאי' },
+                                                { word: 'מרץ' },
+                                                { word: 'יוני' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_3_2_2_3',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'December',
+                                            correctOptIdx: 1,
+                                            opts: [
+                                                { word: 'נובמבר' },
+                                                { word: 'דצמבר' },
+                                                { word: 'ינואר' },
+                                                { word: 'פברואר' }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            id: 'level1_3_3',
+                            title: 'מילים הקשורות לזמן',
+                            lessons: [
+                                {
+                                    id: 'lesson1_3_3_1',
+                                    title: 'מושגי זמן בסיסיים',
+                                    quests: [
+                                        {
+                                            id: 'quest1_3_3_1_1',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Evening',
+                                            correctOptIdx: 1,
+                                            opts: [
+                                                { word: 'בוקר' },
+                                                { word: 'ערב' },
+                                                { word: 'צהריים' },
+                                                { word: 'לילה' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_3_3_1_2',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Yesterday',
+                                            correctOptIdx: 0,
+                                            opts: [
+                                                { word: 'אתמול' },
+                                                { word: 'היום' },
+                                                { word: 'מחר' },
+                                                { word: 'עכשיו' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_3_3_1_3',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Hour',
+                                            correctOptIdx: 2,
+                                            opts: [
+                                                { word: 'דקה' },
+                                                { word: 'שניה' },
+                                                { word: 'שעה' },
+                                                { word: 'יום' }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    id: 'lesson1_3_3_2',
+                                    title: 'מושגי זמן מתקדמים',
+                                    quests: [
+                                        {
+                                            id: 'quest1_3_3_2_1',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Minute',
+                                            correctOptIdx: 2,
+                                            opts: [
+                                                { word: 'שעה' },
+                                                { word: 'יום' },
+                                                { word: 'דקה' },
+                                                { word: 'שניה' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_3_3_2_2',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Tomorrow',
+                                            correctOptIdx: 1,
+                                            opts: [
+                                                { word: 'אתמול' },
+                                                { word: 'מחר' },
+                                                { word: 'היום' },
+                                                { word: 'עכשיו' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_3_3_2_3',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Now',
+                                            correctOptIdx: 2,
+                                            opts: [
+                                                { word: 'מחר' },
+                                                { word: 'אתמול' },
+                                                { word: 'עכשיו' },
+                                                { word: 'היום' }
                                             ]
                                         }
                                     ]

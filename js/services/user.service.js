@@ -22,6 +22,8 @@ export const userService = {
     updateLessonProgress  // Add this line
 }
 
+window.userService = userService
+
 // IIFE to ensure user exists and is logged in
 ;(async function() {
     try {
@@ -76,7 +78,7 @@ async function updateProgress(sectionId, unitId, levelId, lessonId, questId, sco
     updateCompletionStatus(user.progress, sectionId, unitId, levelId)
     
     // Update user's total score
-    user.score = (user.score || 0) + score
+    user.score = Math.round((user.score || 0) + score)
     
     await storageService.put('user', user)
     _saveLocalUser(user)
@@ -101,6 +103,7 @@ function updateCompletionStatus(progress, sectionId, unitId, levelId) {
 }
 
 function getProgressPercentage(sectionId, unitId, levelId, lessonId) {
+
     const user = getLoggedinUser()
     if (!user || !user.progress) return 0
     
@@ -175,7 +178,7 @@ async function updateLessonProgress(sectionId, unitId, levelId, lessonId, percen
     updateCompletionStatus(user.progress, sectionId, unitId, levelId)
     
     // Update user's total score (you may want to adjust this based on your scoring system)
-    user.score = (user.score || 0) + percentageCorrect
+    user.score = Math.round((user.score || 0) + percentageCorrect)
     
     await storageService.put('user', user)
     _saveLocalUser(user)
