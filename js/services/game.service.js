@@ -2005,7 +2005,835 @@ const originalData = {
                             ]
                         }
                     ]
-                }
+                },
+                {
+                    id: 'unit1_5',
+                    title: 'מספרים וספירה',
+                    levels: [
+                        {
+                            id: 'level1_5_1',
+                            title: 'מספרים בסיסיים',
+                            lessons: [
+                                {
+                                    id: 'lesson1_5_1_1',
+                                    title: 'מספרים 1-5',
+                                    quests: [
+                                        {
+                                            id: 'quest1_5_1_1_1',
+                                            title: 'בחר את המספר הנכון:',
+                                            speakWord: 'One',
+                                            correctOptIdx: 0,
+                                            opts: [
+                                                { word: '1️⃣' },
+                                                { word: '2️⃣' },
+                                                { word: '3️⃣' },
+                                                { word: '4️⃣' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_5_1_1_2',
+                                            title: 'בחר את המספר הנכון:',
+                                            speakWord: 'Three',
+                                            correctOptIdx: 2,
+                                            opts: [
+                                                { word: '1️⃣' },
+                                                { word: '2️⃣' },
+                                                { word: '3️⃣' },
+                                                { word: '4️⃣' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_5_1_1_3',
+                                            title: 'בחר את המספר הנכון:',
+                                            speakWord: 'Five',
+                                            correctOptIdx: 3,
+                                            opts: [
+                                                { word: '2️⃣' },
+                                                { word: '3️⃣' },
+                                                { word: '4️⃣' },
+                                                { word: '5️⃣' }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    id: 'lesson1_5_1_2',
+                                    title: 'מספרים 6-10',
+                                    quests: [
+                                        {
+                                            id: 'quest1_5_1_2_1',
+                                            title: 'בחר את המספר הנכון:',
+                                            speakWord: 'Seven',
+                                            correctOptIdx: 1,
+                                            opts: [
+                                                { word: '6️⃣' },
+                                                { word: '7️⃣' },
+                                                { word: '8️⃣' },
+                                                { word: '9️⃣' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_5_1_2_2',
+                                            title: 'בחר את המספר הנכון:',
+                                            speakWord: 'Nine',
+                                            correctOptIdx: 2,
+                                            opts: [
+                                                { word: '7️⃣' },
+                                                { word: '8️⃣' },
+                                                { word: '9️⃣' },
+                                                { word: '🔟' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_5_1_2_3',
+                                            title: 'בחר את המספר הנכון:',
+                                            speakWord: 'Ten',
+                                            correctOptIdx: 3,
+                                            opts: [
+                                                { word: '7️⃣' },
+                                                { word: '8️⃣' },
+                                                { word: '9️⃣' },
+                                                { word: '🔟' }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            id: 'level1_5_2',
+                            title: 'שמות המספרים',
+                            lessons: [
+                                {
+                                    id: 'lesson1_5_2_1',
+                                    title: 'שמות המספרים 1-5',
+                                    quests: [
+                                        {
+                                            id: 'quest1_5_2_1_1',
+                                            title: 'בחר את שם המספר הנכון:',
+                                            speakWord: '2️⃣',
+                                            correctOptIdx: 1,
+                                            opts: [
+                                                { word: 'One' },
+                                                { word: 'Two' },
+                                                { word: 'Three' },
+                                                { word: 'Four' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_5_2_1_2',
+                                            title: 'בחר את שם המספר הנכון:',
+                                            speakWord: '4️⃣',
+                                            correctOptIdx: 3,
+                                            opts: [
+                                                { word: 'One' },
+                                                { word: 'Two' },
+                                                { word: 'Three' },
+                                                { word: 'Four' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_5_2_1_3',
+                                            title: 'בחר את שם המספר הנכון:',
+                                            speakWord: '5️⃣',
+                                            correctOptIdx: 2,
+                                            opts: [
+                                                { word: 'Three' },
+                                                { word: 'Four' },
+                                                { word: 'Five' },
+                                                { word: 'Six' }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    id: 'lesson1_5_2_2',
+                                    title: 'שמות המספרים 6-10',
+                                    quests: [
+                                        {
+                                            id: 'quest1_5_2_2_1',
+                                            title: 'בחר את שם המספר הנכון:',
+                                            speakWord: '6️⃣',
+                                            correctOptIdx: 0,
+                                            opts: [
+                                                { word: 'Six' },
+                                                { word: 'Seven' },
+                                                { word: 'Eight' },
+                                                { word: 'Nine' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_5_2_2_2',
+                                            title: 'בחר את שם המספר הנכון:',
+                                            speakWord: '8️⃣',
+                                            correctOptIdx: 2,
+                                            opts: [
+                                                { word: 'Six' },
+                                                { word: 'Seven' },
+                                                { word: 'Eight' },
+                                                { word: 'Nine' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_5_2_2_3',
+                                            title: 'בחר את שם המספר הנכון:',
+                                            speakWord: '🔟',
+                                            correctOptIdx: 3,
+                                            opts: [
+                                                { word: 'Seven' },
+                                                { word: 'Eight' },
+                                                { word: 'Nine' },
+                                                { word: 'Ten' }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            id: 'level1_5_3',
+                            title: 'ספירה ומניה',
+                            lessons: [
+                                {
+                                    id: 'lesson1_5_3_1',
+                                    title: 'ספירת חפצים',
+                                    quests: [
+                                        {
+                                            id: 'quest1_5_3_1_1',
+                                            title: 'כמה תפוחים יש בתמונה?',
+                                            speakWord: '🍎🍎🍎',
+                                            correctOptIdx: 2,
+                                            opts: [
+                                                { word: 'Two' },
+                                                { word: 'Four' },
+                                                { word: 'Three' },
+                                                { word: 'Five' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_5_3_1_2',
+                                            title: 'כמה כוכבים יש בתמונה?',
+                                            speakWord: '⭐⭐⭐⭐',
+                                            correctOptIdx: 1,
+                                            opts: [
+                                                { word: 'Three' },
+                                                { word: 'Four' },
+                                                { word: 'Five' },
+                                                { word: 'Six' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_5_3_1_3',
+                                            title: 'כמה לבבות יש בתמונה?',
+                                            speakWord: '❤️❤️❤️❤️❤️',
+                                            correctOptIdx: 2,
+                                            opts: [
+                                                { word: 'Three' },
+                                                { word: 'Four' },
+                                                { word: 'Five' },
+                                                { word: 'Six' }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    id: 'lesson1_5_3_2',
+                                    title: 'ספירה בסדר עולה',
+                                    quests: [
+                                        {
+                                            id: 'quest1_5_3_2_1',
+                                            title: 'מה המספר הבא בסדרה?',
+                                            speakWord: '1️⃣,2️⃣,3️⃣,❓',
+                                            correctOptIdx: 3,
+                                            opts: [
+                                                { word: '2️⃣' },
+                                                { word: '3️⃣' },
+                                                { word: '5️⃣' },
+                                                { word: '4️⃣' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_5_3_2_2',
+                                            title: 'מה המספר הבא בסדרה?',
+                                            speakWord: '4️⃣,5️⃣,6️⃣,❓',
+                                            correctOptIdx: 2,
+                                            opts: [
+                                                { word: '5️⃣' },
+                                                { word: '6️⃣' },
+                                                { word: '7️⃣' },
+                                                { word: '8️⃣' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_5_3_2_3',
+                                            title: 'מה המספר הבא בסדרה?',
+                                            speakWord: '7️⃣,8️⃣,9️⃣,❓',
+                                            correctOptIdx: 3,
+                                            opts: [
+                                                { word: '7️⃣' },
+                                                { word: '8️⃣' },
+                                                { word: '9️⃣' },
+                                                { word: '🔟' }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                    ]
+                },
+                {
+                    id: 'unit1_6',
+                    title: 'משפחה ואנשים',
+                    levels: [
+                        {
+                            id: 'level1_6_1',
+                            title: 'משפחה קרובה',
+                            lessons: [
+                                {
+                                    id: 'lesson1_6_1_1',
+                                    title: 'הורים ואחים',
+                                    quests: [
+                                        {
+                                            id: 'quest1_6_1_1_1',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Mother',
+                                            correctOptIdx: 0,
+                                            opts: [
+                                                { word: 'אמא' },
+                                                { word: 'אבא' },
+                                                { word: 'אח' },
+                                                { word: 'אחות' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_6_1_1_2',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Father',
+                                            correctOptIdx: 1,
+                                            opts: [
+                                                { word: 'אמא' },
+                                                { word: 'אבא' },
+                                                { word: 'אח' },
+                                                { word: 'אחות' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_6_1_1_3',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Brother',
+                                            correctOptIdx: 2,
+                                            opts: [
+                                                { word: 'אמא' },
+                                                { word: 'אבא' },
+                                                { word: 'אח' },
+                                                { word: 'אחות' }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    id: 'lesson1_6_1_2',
+                                    title: 'סבים ודודים',
+                                    quests: [
+                                        {
+                                            id: 'quest1_6_1_2_1',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Grandmother',
+                                            correctOptIdx: 0,
+                                            opts: [
+                                                { word: 'סבתא' },
+                                                { word: 'סבא' },
+                                                { word: 'דודה' },
+                                                { word: 'דוד' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_6_1_2_2',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Grandfather',
+                                            correctOptIdx: 1,
+                                            opts: [
+                                                { word: 'סבתא' },
+                                                { word: 'סבא' },
+                                                { word: 'דודה' },
+                                                { word: 'דוד' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_6_1_2_3',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Aunt',
+                                            correctOptIdx: 2,
+                                            opts: [
+                                                { word: 'סבתא' },
+                                                { word: 'סבא' },
+                                                { word: 'דודה' },
+                                                { word: 'דוד' }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            id: 'level1_6_2',
+                            title: 'תיאור אנשים',
+                            lessons: [
+                                {
+                                    id: 'lesson1_6_2_1',
+                                    title: 'גיל ומצב',
+                                    quests: [
+                                        {
+                                            id: 'quest1_6_2_1_1',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Young',
+                                            correctOptIdx: 0,
+                                            opts: [
+                                                { word: 'צעיר' },
+                                                { word: 'מבוגר' },
+                                                { word: 'גבוה' },
+                                                { word: 'נמוך' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_6_2_1_2',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Old',
+                                            correctOptIdx: 1,
+                                            opts: [
+                                                { word: 'צעיר' },
+                                                { word: 'מבוגר' },
+                                                { word: 'גבוה' },
+                                                { word: 'נמוך' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_6_2_1_3',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Tall',
+                                            correctOptIdx: 2,
+                                            opts: [
+                                                { word: 'צעיר' },
+                                                { word: 'מבוגר' },
+                                                { word: 'גבוה' },
+                                                { word: 'נמוך' }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    id: 'lesson1_6_2_2',
+                                    title: 'מראה חיצוני',
+                                    quests: [
+                                        {
+                                            id: 'quest1_6_2_2_1',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Beautiful',
+                                            correctOptIdx: 0,
+                                            opts: [
+                                                { word: 'יפה' },
+                                                { word: 'חכם' },
+                                                { word: 'חזק' },
+                                                { word: 'מהיר' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_6_2_2_2',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Smart',
+                                            correctOptIdx: 1,
+                                            opts: [
+                                                { word: 'יפה' },
+                                                { word: 'חכם' },
+                                                { word: 'חזק' },
+                                                { word: 'מהיר' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_6_2_2_3',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Strong',
+                                            correctOptIdx: 2,
+                                            opts: [
+                                                { word: 'יפה' },
+                                                { word: 'חכם' },
+                                                { word: 'חזק' },
+                                                { word: 'מהיר' }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            id: 'level1_6_3',
+                            title: 'מקצועות ותפקידים',
+                            lessons: [
+                                {
+                                    id: 'lesson1_6_3_1',
+                                    title: 'מקצועות נפוצים',
+                                    quests: [
+                                        {
+                                            id: 'quest1_6_3_1_1',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Teacher',
+                                            correctOptIdx: 0,
+                                            opts: [
+                                                { word: 'מורה' },
+                                                { word: 'רופא' },
+                                                { word: 'שוטר' },
+                                                { word: 'טבח' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_6_3_1_2',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Doctor',
+                                            correctOptIdx: 1,
+                                            opts: [
+                                                { word: 'מורה' },
+                                                { word: 'רופא' },
+                                                { word: 'שוטר' },
+                                                { word: 'טבח' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_6_3_1_3',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Police Officer',
+                                            correctOptIdx: 2,
+                                            opts: [
+                                                { word: 'מורה' },
+                                                { word: 'רופא' },
+                                                { word: 'שוטר' },
+                                                { word: 'טבח' }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    id: 'lesson1_6_3_2',
+                                    title: 'מקומות עבודה',
+                                    quests: [
+                                        {
+                                            id: 'quest1_6_3_2_1',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'School',
+                                            correctOptIdx: 0,
+                                            opts: [
+                                                { word: 'בית ספר' },
+                                                { word: 'בית חולים' },
+                                                { word: 'תחנת משטרה' },
+                                                { word: 'מסעדה' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_6_3_2_2',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Hospital',
+                                            correctOptIdx: 1,
+                                            opts: [
+                                                { word: 'בית ספר' },
+                                                { word: 'בית חולים' },
+                                                { word: 'תחנת משטרה' },
+                                                { word: 'מסעדה' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_6_3_2_3',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Police Station',
+                                            correctOptIdx: 2,
+                                            opts: [
+                                                { word: 'בית ספר' },
+                                                { word: 'בית חולים' },
+                                                { word: 'תחנת משטרה' },
+                                                { word: 'מסעדה' }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    id: 'unit1_7',
+                    title: 'אוכל ושתייה',
+                    levels: [
+                        {
+                            id: 'level1_7_1',
+                            title: 'ארוחות היום',
+                            lessons: [
+                                {
+                                    id: 'lesson1_7_1_1',
+                                    title: 'ארוחת בוקר',
+                                    quests: [
+                                        {
+                                            id: 'quest1_7_1_1_1',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Bread',
+                                            correctOptIdx: 0,
+                                            opts: [
+                                                { word: 'לחם' },
+                                                { word: 'חלב' },
+                                                { word: 'ביצה' },
+                                                { word: 'גבינה' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_7_1_1_2',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Milk',
+                                            correctOptIdx: 1,
+                                            opts: [
+                                                { word: 'לחם' },
+                                                { word: 'חלב' },
+                                                { word: 'ביצה' },
+                                                { word: 'גבינה' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_7_1_1_3',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Egg',
+                                            correctOptIdx: 2,
+                                            opts: [
+                                                { word: 'לחם' },
+                                                { word: 'חלב' },
+                                                { word: 'ביצה' },
+                                                { word: 'גבינה' }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    id: 'lesson1_7_1_2',
+                                    title: 'ארוחת צהריים',
+                                    quests: [
+                                        {
+                                            id: 'quest1_7_1_2_1',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Rice',
+                                            correctOptIdx: 0,
+                                            opts: [
+                                                { word: 'אורז' },
+                                                { word: 'עוף' },
+                                                { word: 'דג' },
+                                                { word: 'בשר' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_7_1_2_2',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Chicken',
+                                            correctOptIdx: 1,
+                                            opts: [
+                                                { word: 'אורז' },
+                                                { word: 'עוף' },
+                                                { word: 'דג' },
+                                                { word: 'בשר' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_7_1_2_3',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Fish',
+                                            correctOptIdx: 2,
+                                            opts: [
+                                                { word: 'אורז' },
+                                                { word: 'עוף' },
+                                                { word: 'דג' },
+                                                { word: 'בשר' }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            id: 'level1_7_2',
+                            title: 'משקאות',
+                            lessons: [
+                                {
+                                    id: 'lesson1_7_2_1',
+                                    title: 'משקאות קרים',
+                                    quests: [
+                                        {
+                                            id: 'quest1_7_2_1_1',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Water',
+                                            correctOptIdx: 0,
+                                            opts: [
+                                                { word: 'מים' },
+                                                { word: 'מיץ' },
+                                                { word: 'קולה' },
+                                                { word: 'חלב' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_7_2_1_2',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Juice',
+                                            correctOptIdx: 1,
+                                            opts: [
+                                                { word: 'מים' },
+                                                { word: 'מיץ' },
+                                                { word: 'קולה' },
+                                                { word: 'חלב' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_7_2_1_3',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Cola',
+                                            correctOptIdx: 2,
+                                            opts: [
+                                                { word: 'מים' },
+                                                { word: 'מיץ' },
+                                                { word: 'קולה' },
+                                                { word: 'חלב' }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    id: 'lesson1_7_2_2',
+                                    title: 'משקאות חמים',
+                                    quests: [
+                                        {
+                                            id: 'quest1_7_2_2_1',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Coffee',
+                                            correctOptIdx: 0,
+                                            opts: [
+                                                { word: 'קפה' },
+                                                { word: 'תה' },
+                                                { word: 'שוקו' },
+                                                { word: 'מרק' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_7_2_2_2',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Tea',
+                                            correctOptIdx: 1,
+                                            opts: [
+                                                { word: 'קפה' },
+                                                { word: 'תה' },
+                                                { word: 'שוקו' },
+                                                { word: 'מרק' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_7_2_2_3',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Hot Chocolate',
+                                            correctOptIdx: 2,
+                                            opts: [
+                                                { word: 'קפה' },
+                                                { word: 'תה' },
+                                                { word: 'שוקו' },
+                                                { word: 'מרק' }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            id: 'level1_7_3',
+                            title: 'טעמים ותיאורי אוכל',
+                            lessons: [
+                                {
+                                    id: 'lesson1_7_3_1',
+                                    title: 'טעמים בסיסיים',
+                                    quests: [
+                                        {
+                                            id: 'quest1_7_3_1_1',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Sweet',
+                                            correctOptIdx: 0,
+                                            opts: [
+                                                { word: 'מתוק' },
+                                                { word: 'חמוץ' },
+                                                { word: 'מלוח' },
+                                                { word: 'מר' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_7_3_1_2',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Sour',
+                                            correctOptIdx: 1,
+                                            opts: [
+                                                { word: 'מתוק' },
+                                                { word: 'חמוץ' },
+                                                { word: 'מלוח' },
+                                                { word: 'מר' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_7_3_1_3',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Salty',
+                                            correctOptIdx: 2,
+                                            opts: [
+                                                { word: 'מתוק' },
+                                                { word: 'חמוץ' },
+                                                { word: 'מלוח' },
+                                                { word: 'מר' }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    id: 'lesson1_7_3_2',
+                                    title: 'תיאורי מרקם וטמפרטורה',
+                                    quests: [
+                                        {
+                                            id: 'quest1_7_3_2_1',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Hot',
+                                            correctOptIdx: 0,
+                                            opts: [
+                                                { word: 'חם' },
+                                                { word: 'קר' },
+                                                { word: 'רך' },
+                                                { word: 'קשה' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_7_3_2_2',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Cold',
+                                            correctOptIdx: 1,
+                                            opts: [
+                                                { word: 'חם' },
+                                                { word: 'קר' },
+                                                { word: 'רך' },
+                                                { word: 'קשה' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_7_3_2_3',
+                                            title: 'בחר את התרגום הנכון:',
+                                            speakWord: 'Soft',
+                                            correctOptIdx: 2,
+                                            opts: [
+                                                { word: 'חם' },
+                                                { word: 'קר' },
+                                                { word: 'רך' },
+                                                { word: 'קשה' }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }                
 
             ]
         }
@@ -2020,7 +2848,13 @@ export const gameService = {
 
     async getSection(sectionId) {
         const data = await _getData()
-        return data.sections.find(s => s.id === sectionId)
+        const section = JSON.parse(JSON.stringify(
+            data.sections.find(section => section.id === sectionId)
+        ))
+
+        if (!section) return null
+
+        return _shuffleQuests(section)
     },
 
     async getUnitsForSection(sectionId) {
@@ -2076,6 +2910,7 @@ export const gameService = {
                 }
 
                 unit.levels.forEach(level => {
+                    if (!level.lessons) console.log(`level ${level.id} does not have lessons`, level)
                     progressTemplate.sections[section.id].units[unit.id].levels[level.id] = {
                         id: level.id,
                         title: level.title,
@@ -2157,5 +2992,37 @@ function deepCloneWithNewIds(obj, idPrefix) {
     return obj
 }
 
+function _shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1))
+            ;[array[i], array[j]] = [array[j], array[i]]
+    }
+    return array
+}
 
+function _shuffleQuests(section) {
+    section.units.forEach(unit => {
+        unit.levels.forEach(level => {
+            level.lessons.forEach(lesson => {
+                // Shuffle quests
+                lesson.quests = _shuffleArray([...lesson.quests])
 
+                // Shuffle options within each quest
+                lesson.quests.forEach(quest => {
+                    // Only shuffle opts if they exist (multiple choice questions)
+                    if (quest.opts) {
+                        const correctOpt = quest.opts[quest.correctOptIdx]
+                        quest.opts = _shuffleArray([...quest.opts])
+                        // Update correctOptIdx to match new position
+                        quest.correctOptIdx = quest.opts.indexOf(correctOpt)
+                    }
+                    // Handle matching/couples type questions
+                    else if (quest.couples) {
+                        quest.couples = _shuffleArray([...quest.couples])
+                    }
+                })
+            })
+        })
+    })
+    return section
+}
