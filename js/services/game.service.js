@@ -1603,7 +1603,410 @@ const originalData = {
                             ]
                         }
                     ]
+                },
+                {
+                    id: 'unit1_4',
+                    title: 'צבעים באנגלית',
+                    levels: [
+                        {
+                            id: 'level1_4_1',
+                            title: 'צבעים בסיסיים',
+                            lessons: [
+                                {
+                                    id: 'lesson1_4_1_1',
+                                    title: 'אדום, כחול, צהוב',
+                                    quests: [
+                                        {
+                                            id: 'quest1_4_1_1_1',
+                                            title: 'בחר את הצבע הנכון:',
+                                            speakWord: 'Red',
+                                            correctOptIdx: 0,
+                                            opts: [
+                                                { word: '🟥' },
+                                                { word: '🟦' },
+                                                { word: '🟨' },
+                                                { word: '⬜' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_4_1_1_2',
+                                            title: 'בחר את הצבע הנכון:',
+                                            speakWord: 'Blue',
+                                            correctOptIdx: 1,
+                                            opts: [
+                                                { word: '🟥' },
+                                                { word: '🟦' },
+                                                { word: '🟨' },
+                                                { word: '⬜' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_4_1_1_3',
+                                            title: 'בחר את הצבע הנכון:',
+                                            speakWord: 'Yellow',
+                                            correctOptIdx: 2,
+                                            opts: [
+                                                { word: '🟥' },
+                                                { word: '🟦' },
+                                                { word: '🟨' },
+                                                { word: '⬜' }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    id: 'lesson1_4_1_2',
+                                    title: 'ירוק, שחור, לבן',
+                                    quests: [
+                                        {
+                                            id: 'quest1_4_1_2_1',
+                                            title: 'בחר את הצבע הנכון:',
+                                            speakWord: 'Green',
+                                            correctOptIdx: 0,
+                                            opts: [
+                                                { word: '🟩' },
+                                                { word: '⬛' },
+                                                { word: '⬜' },
+                                                { word: '🟫' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_4_1_2_2',
+                                            title: 'בחר את הצבע הנכון:',
+                                            speakWord: 'Black',
+                                            correctOptIdx: 1,
+                                            opts: [
+                                                { word: '🟩' },
+                                                { word: '⬛' },
+                                                { word: '⬜' },
+                                                { word: '🟫' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_4_1_2_3',
+                                            title: 'בחר את הצבע הנכון:',
+                                            speakWord: 'White',
+                                            correctOptIdx: 2,
+                                            opts: [
+                                                { word: '🟩' },
+                                                { word: '⬛' },
+                                                { word: '⬜' },
+                                                { word: '🟫' }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    id: 'lesson1_4_1_3',
+                                    title: 'חום, כתום, סגול',
+                                    quests: [
+                                        {
+                                            id: 'quest1_4_1_3_1',
+                                            title: 'בחר את הצבע הנכון:',
+                                            speakWord: 'Brown',
+                                            correctOptIdx: 0,
+                                            opts: [
+                                                { word: '🟫' },
+                                                { word: '🟧' },
+                                                { word: '🟪' },
+                                                { word: '⬜' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_4_1_3_2',
+                                            title: 'בחר את הצבע הנכון:',
+                                            speakWord: 'Orange',
+                                            correctOptIdx: 1,
+                                            opts: [
+                                                { word: '🟫' },
+                                                { word: '🟧' },
+                                                { word: '🟪' },
+                                                { word: '⬜' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_4_1_3_3',
+                                            title: 'בחר את הצבע הנכון:',
+                                            speakWord: 'Purple',
+                                            correctOptIdx: 2,
+                                            opts: [
+                                                { word: '🟫' },
+                                                { word: '🟧' },
+                                                { word: '🟪' },
+                                                { word: '⬜' }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            id: 'level1_4_2',
+                            title: 'שמות הצבעים',
+                            lessons: [
+                                {
+                                    id: 'lesson1_4_2_1',
+                                    title: 'צבעים בסיסיים - שמות',
+                                    quests: [
+                                        {
+                                            id: 'quest1_4_2_1_1',
+                                            title: 'בחר את שם הצבע הנכון:',
+                                            speakWord: '🟥',
+                                            correctOptIdx: 0,
+                                            opts: [
+                                                { word: 'Red' },
+                                                { word: 'Blue' },
+                                                { word: 'Yellow' },
+                                                { word: 'Green' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_4_2_1_2',
+                                            title: 'בחר את שם הצבע הנכון:',
+                                            speakWord: '🟦',
+                                            correctOptIdx: 1,
+                                            opts: [
+                                                { word: 'Red' },
+                                                { word: 'Blue' },
+                                                { word: 'Yellow' },
+                                                { word: 'Green' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_4_2_1_3',
+                                            title: 'בחר את שם הצבע הנכון:',
+                                            speakWord: '🟨',
+                                            correctOptIdx: 2,
+                                            opts: [
+                                                { word: 'Red' },
+                                                { word: 'Blue' },
+                                                { word: 'Yellow' },
+                                                { word: 'Green' }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    id: 'lesson1_4_2_2',
+                                    title: 'שחור, לבן וירוק - שמות',
+                                    quests: [
+                                        {
+                                            id: 'quest1_4_2_2_1',
+                                            title: 'בחר את שם הצבע הנכון:',
+                                            speakWord: '⬛',
+                                            correctOptIdx: 0,
+                                            opts: [
+                                                { word: 'Black' },
+                                                { word: 'White' },
+                                                { word: 'Green' },
+                                                { word: 'Brown' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_4_2_2_2',
+                                            title: 'בחר את שם הצבע הנכון:',
+                                            speakWord: '⬜',
+                                            correctOptIdx: 1,
+                                            opts: [
+                                                { word: 'Black' },
+                                                { word: 'White' },
+                                                { word: 'Green' },
+                                                { word: 'Brown' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_4_2_2_3',
+                                            title: 'בחר את שם הצבע הנכון:',
+                                            speakWord: '🟩',
+                                            correctOptIdx: 2,
+                                            opts: [
+                                                { word: 'Black' },
+                                                { word: 'White' },
+                                                { word: 'Green' },
+                                                { word: 'Brown' }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    id: 'lesson1_4_2_3',
+                                    title: 'צבעים נוספים - שמות',
+                                    quests: [
+                                        {
+                                            id: 'quest1_4_2_3_1',
+                                            title: 'בחר את שם הצבע הנכון:',
+                                            speakWord: '🟧',
+                                            correctOptIdx: 0,
+                                            opts: [
+                                                { word: 'Orange' },
+                                                { word: 'Purple' },
+                                                { word: 'Brown' },
+                                                { word: 'Pink' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_4_2_3_2',
+                                            title: 'בחר את שם הצבע הנכון:',
+                                            speakWord: '🟪',
+                                            correctOptIdx: 1,
+                                            opts: [
+                                                { word: 'Orange' },
+                                                { word: 'Purple' },
+                                                { word: 'Brown' },
+                                                { word: 'Pink' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_4_2_3_3',
+                                            title: 'בחר את שם הצבע הנכון:',
+                                            speakWord: '🟫',
+                                            correctOptIdx: 2,
+                                            opts: [
+                                                { word: 'Orange' },
+                                                { word: 'Purple' },
+                                                { word: 'Brown' },
+                                                { word: 'Pink' }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            id: 'level1_4_3',
+                            title: 'צבעים בחיי היומיום',
+                            lessons: [
+                                {
+                                    id: 'lesson1_4_3_1',
+                                    title: 'צבעים בטבע',
+                                    quests: [
+                                        {
+                                            id: 'quest1_4_3_1_1',
+                                            title: 'מה הצבע של השמש?',
+                                            speakWord: 'Sun',
+                                            correctOptIdx: 0,
+                                            opts: [
+                                                { word: 'Yellow' },
+                                                { word: 'Blue' },
+                                                { word: 'Green' },
+                                                { word: 'Red' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_4_3_1_2',
+                                            title: 'מה הצבע של השמיים?',
+                                            speakWord: 'Sky',
+                                            correctOptIdx: 1,
+                                            opts: [
+                                                { word: 'Yellow' },
+                                                { word: 'Blue' },
+                                                { word: 'Green' },
+                                                { word: 'Red' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_4_3_1_3',
+                                            title: 'מה הצבע של העשב?',
+                                            speakWord: 'Grass',
+                                            correctOptIdx: 2,
+                                            opts: [
+                                                { word: 'Yellow' },
+                                                { word: 'Blue' },
+                                                { word: 'Green' },
+                                                { word: 'Red' }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    id: 'lesson1_4_3_2',
+                                    title: 'צבעי מאכלים',
+                                    quests: [
+                                        {
+                                            id: 'quest1_4_3_2_1',
+                                            title: 'מה הצבע של התפוח?',
+                                            speakWord: 'Apple',
+                                            correctOptIdx: 0,
+                                            opts: [
+                                                { word: 'Red' },
+                                                { word: 'Orange' },
+                                                { word: 'Yellow' },
+                                                { word: 'Green' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_4_3_2_2',
+                                            title: 'מה הצבע של התפוז?',
+                                            speakWord: 'Orange',
+                                            correctOptIdx: 1,
+                                            opts: [
+                                                { word: 'Red' },
+                                                { word: 'Orange' },
+                                                { word: 'Yellow' },
+                                                { word: 'Green' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_4_3_2_3',
+                                            title: 'מה הצבע של הבננה?',
+                                            speakWord: 'Banana',
+                                            correctOptIdx: 2,
+                                            opts: [
+                                                { word: 'Red' },
+                                                { word: 'Orange' },
+                                                { word: 'Yellow' },
+                                                { word: 'Green' }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    id: 'lesson1_4_3_3',
+                                    title: 'צבעים בבגדים',
+                                    quests: [
+                                        {
+                                            id: 'quest1_4_3_3_1',
+                                            title: 'איזה צבע החולצה?',
+                                            speakWord: '👕',
+                                            correctOptIdx: 0,
+                                            opts: [
+                                                { word: 'Blue' },
+                                                { word: 'Black' },
+                                                { word: 'White' },
+                                                { word: 'Red' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_4_3_3_2',
+                                            title: 'איזה צבע המכנסיים?',
+                                            speakWord: '👖',
+                                            correctOptIdx: 1,
+                                            opts: [
+                                                { word: 'Blue' },
+                                                { word: 'Black' },
+                                                { word: 'White' },
+                                                { word: 'Red' }
+                                            ]
+                                        },
+                                        {
+                                            id: 'quest1_4_3_3_3',
+                                            title: 'איזה צבע הנעליים?',
+                                            speakWord: '👟',
+                                            correctOptIdx: 2,
+                                            opts: [
+                                                { word: 'Blue' },
+                                                { word: 'Black' },
+                                                { word: 'White' },
+                                                { word: 'Red' }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 }
+
             ]
         }
     ]
