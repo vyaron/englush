@@ -8,31 +8,29 @@ const gCheers =
 export function speak(txt) {
   try {
     if ('speechSynthesis' in window) {
-      const utterance = new SpeechSynthesisUtterance(txt);
-      utterance.lang = 'en-US';
-      let voices = speechSynthesis.getVoices();
+      const utterance = new SpeechSynthesisUtterance(txt)
+      utterance.lang = 'en-US'
+      let voices = speechSynthesis.getVoices()
       if (voices.length === 0) {
         speechSynthesis.onvoiceschanged = () => {
-          voices = speechSynthesis.getVoices();
-          // alert('voice-changed, voices:' + voices.length)
-          utterance.voice = voices[0];
-          // alert(utterance.voice.name)
-          // console.log('utterance.voice', utterance.voice)
-          speechSynthesis.speak(utterance);
-        };
+          voices = speechSynthesis.getVoices()
+          // Try to find an English US voice
+          const englishVoice = voices.find(voice => voice.lang === 'en-US')
+          utterance.voice = englishVoice || voices[0]
+          speechSynthesis.speak(utterance)
+        }
       } else {
-        utterance.voice = voices[0];
-        // alert('about to speak')
-        // console.log('utterance.voice', utterance.voice)
-        speechSynthesis.speak(utterance);
+        // Try to find an English US voice
+        const englishVoice = voices.find(voice => voice.lang === 'en-US')
+        utterance.voice = englishVoice || voices[0]
+        speechSynthesis.speak(utterance)
       }
     } else {
-      alert('SpeechSynthesis is not supported in this browser');
+      alert('SpeechSynthesis is not supported in this browser')
     }
   } catch (err) {
     alert(err)
   }
-
 }
 
 
