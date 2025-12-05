@@ -135,7 +135,7 @@ async function checkAnswer() {
         await userService.updateProgress(currentSectionId, currentUnitId, currentLevelId, currentLessonId, quest.id, 100)
     } else {
         playAudio('wrong.mp3');
-        const correctAnswer = quest.opts[quest.correctOptIdx].word
+        const correctAnswer = quest.opts && quest.opts[quest.correctOptIdx] ? quest.opts[quest.correctOptIdx].word : 'Unknown'
         feedbackText.innerHTML = `
             <div class="feedback-content">
                 <img src="img/sad-dog.webp" alt="Sad Dog" class="feedback-dog">

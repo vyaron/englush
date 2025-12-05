@@ -912,7 +912,7 @@ export default {
                                             id: 'quest1_2_2_1_5',
                                             title: 'בחר את שם החיה הנכון:',
                                             speakWord: '🐒',
-                                            correctOptIdx: 4,
+                                            correctOptIdx: 2,
                                             opts: [
                                                 { word: 'Fox' },
                                                 { word: 'Raccoon' },
