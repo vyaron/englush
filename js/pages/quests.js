@@ -118,7 +118,7 @@ async function checkAnswer() {
     pageOverlay.classList.add('show')
 
     if (isCorrect) {
-        playAudio('right.mp3');
+        playAudio('right.mp3')
         feedbackText.innerHTML = `
             <div class="feedback-content">
                 <img src="img/dog.png" alt="Happy Dog" class="feedback-dog">
@@ -134,7 +134,7 @@ async function checkAnswer() {
         // Update user progress
         await userService.updateProgress(currentSectionId, currentUnitId, currentLevelId, currentLessonId, quest.id, 100)
     } else {
-        playAudio('wrong.mp3');
+        playAudio('wrong.mp3')
         const correctAnswer = quest.opts && quest.opts[quest.correctOptIdx] ? quest.opts[quest.correctOptIdx].word : 'Unknown'
         feedbackText.innerHTML = `
             <div class="feedback-content">
@@ -304,30 +304,30 @@ function setupCouplesQuest() {
 }
 
 function showConfirmModal() {
-    const confirmModal = document.getElementById('confirmModal');
-    const pageOverlay = document.getElementById('pageOverlay');
+    const confirmModal = document.getElementById('confirmModal')
+    const pageOverlay = document.getElementById('pageOverlay')
 
     // Set display to block and trigger reflow
-    confirmModal.style.display = 'block';
-    confirmModal.offsetHeight;
+    confirmModal.style.display = 'block'
+    confirmModal.offsetHeight
 
     // Add show class to start animation
-    confirmModal.classList.add('show');
-    pageOverlay.classList.add('show');
+    confirmModal.classList.add('show')
+    pageOverlay.classList.add('show')
 }
 
 function hideConfirmModal() {
-    const confirmModal = document.getElementById('confirmModal');
-    const pageOverlay = document.getElementById('pageOverlay');
+    const confirmModal = document.getElementById('confirmModal')
+    const pageOverlay = document.getElementById('pageOverlay')
 
     // Remove show class to start hiding animation
-    confirmModal.classList.remove('show');
-    pageOverlay.classList.remove('show');
+    confirmModal.classList.remove('show')
+    pageOverlay.classList.remove('show')
 
     // Wait for animation to finish before setting display to none
     setTimeout(() => {
-        confirmModal.style.display = 'none';
-    }, 300); // This should match the transition duration in CSS
+        confirmModal.style.display = 'none'
+    }, 300) // This should match the transition duration in CSS
 }
 
 function goToUnitsPage() {
@@ -361,13 +361,13 @@ async function finishLesson() {
         } else {
             return quest.userAnswer === quest.correctOptIdx
         }
-    }).length;
+    }).length
 
-    const totalQuests = quests.length;
-    const percentageCorrect = (correctAnswers / totalQuests) * 100;
-    const oldScore = userService.getLoggedinUser().score;
+    const totalQuests = quests.length
+    const percentageCorrect = (correctAnswers / totalQuests) * 100
+    const oldScore = userService.getLoggedinUser().score
 
-    const message = percentageCorrect >= 70 ? 'כל הכבוד!' : 'לא רע';
+    const message = percentageCorrect >= 70 ? 'כל הכבוד!' : 'לא רע'
 
     const app = document.getElementById('app')
     app.innerHTML = `
@@ -387,7 +387,7 @@ async function finishLesson() {
 
     // Update progress first to get new total score
     await userService.updateLessonProgress(currentSectionId, currentUnitId, currentLevelId, currentLessonId, percentageCorrect)
-    const newScore = userService.getLoggedinUser().score;
+    const newScore = userService.getLoggedinUser().score
 
     // Animate total score
     const scoreElement = document.querySelector('.total-score')
